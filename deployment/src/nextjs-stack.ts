@@ -36,7 +36,7 @@ export class NextJsStack extends Stack {
     const {stage} = props
     const isProduction = stage === 'prod'
     const url = isProduction ? CONFIG.PROD_URL : CONFIG.DEV_URL
-    const basePath = '/.open-next'
+    const basePath = '.open-next'
 
     ////////////////////////////////////////////////////////////////
     // Create Static Files (assets) S3 Bucket and Bucket Deployment
