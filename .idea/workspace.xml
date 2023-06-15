@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ffe001d-6583-4d88-b2fe-cf57d1814e7a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/deployment/.open-next/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/.open-next/image-optimization-function/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/.open-next/server-function/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/src/aws/functions/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/functions/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/src/nextjs-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/nextjs-stack.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michaelatherton/Development/memba/memba-web-app/deployment",
+    "last_opened_file_path": "/Users/michaelatherton/Development/memba/memba-web-app/deployment/.open-next/server-function",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -42,11 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deployment/.open-next/server-function" />
       <recent name="$PROJECT_DIR$/deployment" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/deployment/src" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/deployment/scripts/new" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/(auth)/(users)" />
@@ -75,7 +79,7 @@
       <workItem from="1686817849106" duration="1057000" />
       <workItem from="1686818939108" duration="1999000" />
       <workItem from="1686821235344" duration="1552000" />
-      <workItem from="1686822939913" duration="3736000" />
+      <workItem from="1686822939913" duration="4417000" />
     </task>
     <servers />
   </component>

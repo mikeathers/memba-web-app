@@ -16,7 +16,6 @@ import {
 import {Duration, RemovalPolicy} from 'aws-cdk-lib'
 import {RetentionDays} from 'aws-cdk-lib/aws-logs'
 import CONFIG from '../../config'
-import {base} from 'next/dist/build/webpack/config/blocks/base'
 
 type ImageOptimisationProps = {
   scope: Construct
@@ -64,14 +63,6 @@ export const createImageOptimisationFunction = (props: ImageOptimisationProps) =
       }),
     },
   )
-
-  //   this.imageOptimisationFunction.addLayers(
-  //     LayerVersion.fromLayerVersionArn(
-  //       this,
-  //       'Sharp',
-  //       'arn:aws:lambda:eu-west-1:374122556424:layer:Sharp:1',
-  //     ),
-  //   )
 
   imageOptimisationFunction.node.addDependency(staticContentDeployment)
 
