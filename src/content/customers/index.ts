@@ -1,5 +1,26 @@
 export const newCustomer: NewCustomerContent = {
-  heading: 'New customer',
+  heading: 'Get started',
+  yourPlan: 'Your plan',
+  perMonth: '/pm',
+  freePricing: '£0.00',
+  basicPricing: '£30.00',
+  premiumPricing: '£50.00',
+  form: {
+    companyName: 'Company name:',
+    companyNamePlaceholder: 'Enter your company name',
+    firstName: 'First name:',
+    firstNamePlaceholder: 'Enter your first name',
+    lastName: 'Last name:',
+    lastNamePlaceholder: 'Enter your last name',
+    email: 'Email:',
+    emailPlaceholder: 'Enter your email',
+    password: 'Password:',
+    passwordPlaceholder: 'Create a password',
+    passwordValidationMessage:
+      'Password should include lowercase, uppercase, digits and symbols.',
+    passwordLengthMessage: 'Password should be at least 6 characters.',
+    createAccount: 'Create account',
+  },
 }
 
 export const pricingPlans: PricingPlansContent = {

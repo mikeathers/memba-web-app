@@ -12,9 +12,9 @@ interface PricingPlansProps {
   content: PricingPlansContent
 }
 
-const FREE_TIER = 'FREE_TIER'
-const BASIC_TIER = 'BASIC_TIER'
-const PREMIUM_TIER = 'PREMIUM_TIER'
+const FREE_TIER = 'Free'
+const BASIC_TIER = 'Basic'
+const PREMIUM_TIER = 'Premium'
 
 export const PricingPlansComponent: React.FC<PricingPlansProps> = (props) => {
   const {content} = props

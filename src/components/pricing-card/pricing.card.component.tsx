@@ -32,8 +32,8 @@ export const PricingCard: React.FC<PricingCardProps> = (props) => {
     pricePerMonth,
     numberOfCustomers,
     transactionalCosts,
-    findOutMore,
     getStarted,
+    getStartedClick,
   } = props
   return (
     <Container>
@@ -53,10 +53,16 @@ export const PricingCard: React.FC<PricingCardProps> = (props) => {
         >
           {numberOfCustomers}
         </Text>
-        <Button $marginBottomX={spacingTokens.space10x} variant={'text'}>
-          {findOutMore}
+        {/*<Button $marginBottomX={spacingTokens.space10x} variant={'text'}>*/}
+        {/*  {findOutMore}*/}
+        {/*</Button>*/}
+        <Button
+          variant={'primary'}
+          onClick={getStartedClick}
+          $marginTopX={spacingTokens.space10x}
+        >
+          {getStarted}
         </Button>
-        <Button variant={'primary'}>{getStarted}</Button>
       </Content>
     </Container>
   )

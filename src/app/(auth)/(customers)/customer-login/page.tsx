@@ -23,11 +23,11 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-const Login: React.FC = async () => {
+const CustomerLoginPage: React.FC = async () => {
   return (
     <>
       <div>Hello</div>
     </>
   )
 }
-export default Login
+export default CustomerLoginPage

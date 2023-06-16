@@ -5,7 +5,7 @@ import type {Spacing} from '@/styles'
 
 import {StyledButton} from './button.styles'
 
-export interface ButtonProps {
+export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
   children: string
   variant: 'primary' | 'secondary' | 'text'
   $marginBottomX?: keyof Spacing

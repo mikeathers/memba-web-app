@@ -1,2 +1,2 @@
-export * from './new-customers'
+export * from './new-customer'
 export * from './pricing-plans'

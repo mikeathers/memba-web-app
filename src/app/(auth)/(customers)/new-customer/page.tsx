@@ -1,11 +1,11 @@
 /* eslint-disable */
-import {NewCustomersComponent} from '@/domains'
+import {NewCustomer} from '@/domains'
 import {newCustomer} from '@/content'
 
-const NewCustomer = () => {
+const NewCustomerPage = () => {
   const content = newCustomer
 
-  return <NewCustomersComponent content={content} />
+  return <NewCustomer content={content} />
 }
 
-export default NewCustomer
+export default NewCustomerPage

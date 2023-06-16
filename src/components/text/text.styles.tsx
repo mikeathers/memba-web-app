@@ -138,12 +138,10 @@ export const FootNote = styled(BaseText)`
 `
 
 export const Label = styled(BaseText)`
-  font-weight: ${fontWeights.semibold};
-  font-size: ${fontSizes.xxs};
+  font-weight: ${fontWeights.regular};
+  font-size: ${fontSizes.s};
   line-height: ${lineHeights.medium};
-  color: ${({color}) => (color ? colors[color] : colors.neutrals100)};
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: ${({color}) => (color ? colors[color] : colors.greys100)};
 `
 
 export const Tab = styled(BaseText)`

@@ -1,8 +1,46 @@
-import type {FormikErrors} from 'formik'
+import type {FormikErrors, FormikValues} from 'formik'
 
 declare global {
+  interface NewCustomerFormDetails extends FormikValues {
+    emailAddress?: string
+    password?: string
+    companyName?: string
+    firstName?: string
+    lastName?: string
+  }
+
+  type FormikError =
+    | string
+    | string[]
+    | FormikErrors<any>
+    | FormikErrors<any>[]
+    | undefined
+
+  type MiscContent = {
+    allRightsReserved: string
+  }
   type NewCustomerContent = {
     heading: string
+    yourPlan: string
+    perMonth: string
+    freePricing: string
+    basicPricing: string
+    premiumPricing: string
+    form: {
+      companyName: string
+      companyNamePlaceholder: string
+      firstName: string
+      firstNamePlaceholder: string
+      lastName: string
+      lastNamePlaceholder: string
+      email: string
+      emailPlaceholder: string
+      password: string
+      passwordPlaceholder: string
+      passwordValidationMessage: string
+      passwordLengthMessage: string
+      createAccount: string
+    }
   }
   type PricingPlansContent = {
     heading: string
@@ -22,13 +60,6 @@ declare global {
     getStarted: string
     findOutMore: string
   }
-
-  type FormikError =
-    | string
-    | string[]
-    | FormikErrors<any>
-    | FormikErrors<any>[]
-    | undefined
 }
 
 export {}
