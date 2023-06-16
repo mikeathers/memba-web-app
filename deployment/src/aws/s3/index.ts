@@ -66,7 +66,7 @@ export const createBucketDeployment = (
     destinationBucket: bucket,
     sources: [Source.asset(filePath)],
     prune: true,
-    cacheControl: [CacheControl.fromString('public,max-age=31536000,immutable')],
+    cacheControl: [CacheControl.fromString('public,max-age=300,immutable')],
   })
 }
 
