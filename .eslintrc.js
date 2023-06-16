@@ -1,16 +1,5 @@
 module.exports = {
   root: true,
-  ignorePatterns: [
-    'node_modules/',
-    '**/node_modules/*',
-    '.next/',
-    'out/',
-    'public/',
-    '.prettierrc.js',
-    '.eslintrc.js',
-    'deployment/',
-    'next.config.js',
-  ],
   env: {
     browser: true,
     commonjs: true,
@@ -21,6 +10,14 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 8,
   },
+  plugins: [
+    'import',
+    '@typescript-eslint',
+    'react',
+    'react-hooks',
+    'unicorn',
+    'styled-components-a11y',
+  ],
   extends: [
     'next/core-web-vitals',
     'eslint:recommended',
@@ -32,14 +29,23 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:@next/next/recommended',
     'plugin:storybook/recommended',
+    'plugin:styled-components-a11y/recommended',
   ],
+  rules: {
+    'unicorn/filename-case': [
+      'error',
+      {
+        case: 'kebabCase',
+      },
+    ],
+  },
   overrides: [
-    // This configuration will apply only to TypeScript files
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint', 'unused-imports'],
       parserOptions: {
-        project: './tsconfig.eslint.json',
+        project: './tsconfig.json',
         tsconfigRootDir: './',
       },
       extends: [
@@ -53,45 +59,50 @@ module.exports = {
         'plugin:@next/next/recommended',
       ],
       rules: {
-        'react/react-in-jsx-scope': 0,
-        '@typescript-eslint/restrict-template-expressions': 0,
-        'prefer-template': 1,
-        '@typescript-eslint/unbound-method': 0,
-        'react/prop-types': 0,
-        '@typescript-eslint/no-floating-promises': 0,
-        '@typescript-eslint/explicit-module-boundary-types': 0,
-        'react-hooks/exhaustive-deps': 0,
+        'react-hooks/exhaustive-deps': 'off',
+        'react/react-in-jsx-scope': 'off',
+        '@typescript-eslint/comma-dangle': 'off',
+        '@typescript-eslint/consistent-type-imports': 'error',
+        'import/prefer-default-export': 'off',
+        '@typescript-eslint/no-unused-vars': 'off',
+        'unused-imports/no-unused-imports': 'error',
+        'unused-imports/no-unused-vars': [
+          'error',
+          {
+            argsIgnorePattern: '^_',
+          },
+        ],
+        'react-hooks/rules-of-hooks': 'error',
       },
     },
     {
-      files: ['./src/utils/type-guarding/*'],
+      files: ['**/*.{test,tests,stories,styles}.{ts,tsx}'],
       rules: {
-        '@typescript-eslint/no-explicit-any': 0,
+        '@typescript-eslint/no-unsafe-return': 'off',
+        'react/display-name': 'off',
+        'jsx-a11y/alt-text': 'off',
+        'jsx-a11y/click-events-have-key-events': 'off',
+        'jsx-a11y/anchor-has-content': 'off',
+        'jsx-a11y/no-static-element-interactions': 'off',
+        'jsx-a11y/anchor-is-valid': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
       },
     },
     {
-      files: ['**/*.{test,tests,stories}.{ts,tsx}'],
+      files: ['./src/app/**/*.{tsx,ts}'],
       rules: {
-        '@typescript-eslint/no-unsafe-return': 0,
-        'react/display-name': 0,
-        'jsx-a11y/alt-text': 0,
-        'jsx-a11y/click-events-have-key-events': 0,
-        'jsx-a11y/anchor-has-content': 0,
-        'jsx-a11y/no-static-element-interactions': 0,
-        'jsx-a11y/anchor-is-valid': 0,
-        '@typescript-eslint/no-unsafe-assignment': 0,
-        '@typescript-eslint/explicit-module-boundary-types': 0,
-        '@typescript-eslint/no-empty-function': 0,
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
     },
     {
-      files: ['./pages/**/*.{tsx,ts}'],
+      files: ['./src/global.d.ts'],
       rules: {
-        '@typescript-eslint/explicit-module-boundary-types': 0,
+        '@typescript-eslint/no-explicit-any': 'off',
       },
     },
   ],
-  plugins: ['import', '@typescript-eslint', 'react', 'react-hooks'],
   globals: {
     window: true,
     document: true,
