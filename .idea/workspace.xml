@@ -33,6 +33,7 @@
       <change afterPath="$PROJECT_DIR$/public/assets/icons/usage.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/assets/icons/user.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/assets/icons/visible.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/button/button.component.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/button/index.ts" afterDir="false" />
@@ -52,7 +53,9 @@
       <change afterPath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.component.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/customers/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/domains/customers/new-customers/new-customer.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/customers/new-customers/new-customers.component.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/index.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.styles.tsx" afterDir="false" />
@@ -69,19 +72,18 @@
       <change beforePath="$PROJECT_DIR$/src/app/(auth)/(tenants)/customer-login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/(customers)/customer-login/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(auth)/(tenants)/new-customer/page.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/(customers)/new-customer/page.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/(auth)/(tenants)/new-customer/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/(customers)/new-customer/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/customers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/auth/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/auth/new-customers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/auth/new-customers/new-customer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/auth/new-customers/new-customers.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customers/new-customers.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/auth/new-customers/new-customer.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/auth/new-customers/new-customers.component.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.eslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/old.tsconfig.eslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.eslint.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,21 +105,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/michaelatherton/Development/memba/memba-web-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/michaelatherton/Development/memba/memba-web-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "ts.external.directory.path": "/Users/michaelatherton/Development/memba/memba-web-app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -153,7 +155,7 @@
       <workItem from="1686817849106" duration="1057000" />
       <workItem from="1686818939108" duration="1999000" />
       <workItem from="1686821235344" duration="1552000" />
-      <workItem from="1686822939913" duration="20543000" />
+      <workItem from="1686822939913" duration="21130000" />
     </task>
     <servers />
   </component>
