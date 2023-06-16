@@ -1,3 +1,83 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
-export const Container = styled.div``
+import {borderRadius, colors, fontSizes, spacing} from '@/styles'
+
+import type {ButtonProps} from './button.component'
+
+type StyledButtonProps = ButtonProps
+
+const margins = css<ButtonProps>`
+  ${({$marginTopX}) => {
+    if ($marginTopX)
+      return css`
+        margin-top: ${spacing[$marginTopX]};
+      `
+  }}
+
+  ${({$marginBottomX}) => {
+    if ($marginBottomX)
+      return css`
+        margin-bottom: ${spacing[$marginBottomX]};
+      `
+  }}
+
+  ${({$marginRightX}) => {
+    if ($marginRightX)
+      return css`
+        margin-right: ${spacing[$marginRightX]};
+      `
+  }}
+
+  ${({$marginLeftX}) => {
+    if ($marginLeftX)
+      return css`
+        margin-left: ${spacing[$marginLeftX]};
+      `
+  }}
+`
+
+export const StyledButton = styled.button<StyledButtonProps>`
+  ${margins};
+  width: 100%;
+  border-radius: ${borderRadius.rounded};
+  background-color: ${colors.blues800};
+  color: ${colors.neutrals000};
+  padding: 6px ${spacing.space4x};
+  outline: none;
+  height: 37px;
+  font-size: ${fontSizes.s};
+
+  ${({variant}) => {
+    if (variant === 'primary') {
+      return css`
+        background-color: ${colors.blues800};
+        color: ${colors.neutrals000};
+        border: none;
+      `
+    }
+    if (variant === 'secondary') {
+      return css`
+        background-color: ${colors.neutrals000};
+        color: ${colors.blues800};
+        border: 1px solid ${colors.blues800};
+      `
+    }
+
+    if (variant === 'text') {
+      return css`
+        padding: ${spacing.space1x};
+        background-color: transparent;
+        border: none;
+        color: ${colors.blues800};
+
+        &:active {
+          color: ${colors.blues100};
+        }
+      `
+    }
+  }};
+
+  &:active {
+    filter: brightness(85%);
+  }
+`

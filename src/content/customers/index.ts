@@ -17,4 +17,6 @@ export const pricingPlans: PricingPlansContent = {
   premiumTierPricePerMonth: '£50.00/pm',
   premiumTierNumberOfCustomer: 'Unlimited customers',
   transactionalCosts: 'We will charge you 1% per transaction you make within the app',
+  getStarted: 'Get Started',
+  findOutMore: 'Find out more',
 }

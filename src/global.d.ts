@@ -19,6 +19,8 @@ declare global {
     premiumTierPricePerMonth: string
     premiumTierNumberOfCustomer: string
     transactionalCosts: string
+    getStarted: string
+    findOutMore: string
   }
 
   type FormikError =

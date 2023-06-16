@@ -1,15 +1,17 @@
 'use client'
 import type React from 'react'
 
+import {spacingTokens} from '@/styles'
+
 import {
   Container,
   Content,
   TitleContainer,
   TitleNumber,
   TitleText,
+  TransactionalCost,
 } from './pricing-card.styles'
-import {Text} from '@/components'
-import {spacingTokens} from '@/styles'
+import {Text, Button} from '../'
 
 interface PricingCardProps {
   titleNumber: string
@@ -17,12 +19,22 @@ interface PricingCardProps {
   pricePerMonth: string
   numberOfCustomers: string
   transactionalCosts: string
+  findOutMore: string
+  getStarted: string
   getStartedClick: () => void
+  findOutMoreClick: () => void
 }
 
 export const PricingCard: React.FC<PricingCardProps> = (props) => {
-  const {titleNumber, titleText, pricePerMonth, numberOfCustomers, transactionalCosts} =
-    props
+  const {
+    titleNumber,
+    titleText,
+    pricePerMonth,
+    numberOfCustomers,
+    transactionalCosts,
+    findOutMore,
+    getStarted,
+  } = props
   return (
     <Container>
       <TitleContainer>
@@ -30,13 +42,21 @@ export const PricingCard: React.FC<PricingCardProps> = (props) => {
         <TitleText>{titleText}</TitleText>
       </TitleContainer>
       <Content>
-        <Text type={'h1'}>{pricePerMonth}</Text>
-        <Text type={'footnote'} marginTopX={spacingTokens.space2x}>
-          {transactionalCosts}
+        <Text type={'h1'} $marginBottomX={spacingTokens.space2x}>
+          {pricePerMonth}
         </Text>
-        <Text type={'body'} marginTopX={spacingTokens.space2x}>
+        <TransactionalCost type={'footnote'}>{transactionalCosts}</TransactionalCost>
+        <Text
+          type={'body'}
+          $marginTopX={spacingTokens.space2x}
+          $marginBottomX={spacingTokens.space1x}
+        >
           {numberOfCustomers}
         </Text>
+        <Button $marginBottomX={spacingTokens.space10x} variant={'text'}>
+          {findOutMore}
+        </Button>
+        <Button variant={'primary'}>{getStarted}</Button>
       </Content>
     </Container>
   )

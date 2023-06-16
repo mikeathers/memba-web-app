@@ -1,5 +1,13 @@
 import styled from 'styled-components'
-import {borderRadius, colors, fontSizes, fontWeights, spacing} from '@/styles'
+import {
+  borderRadius,
+  colors,
+  fontSizes,
+  fontWeights,
+  mediaQueries,
+  spacing,
+} from '@/styles'
+import {Text} from '../'
 
 export const Container = styled.div`
   border-radius: ${borderRadius.rounded};
@@ -8,8 +16,12 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 6px;
-  margin-top: ${spacing.space3x};
-  width: 90%;
+  margin-top: ${spacing.space4x};
+
+  @media (${mediaQueries.m}) {
+    width: 380px;
+    margin-right: ${spacing.space4x};
+  }
 `
 
 export const TitleContainer = styled.div`
@@ -29,9 +41,15 @@ export const TitleText = styled.h3`
 export const TitleNumber = styled.h4`
   font-size: ${fontSizes.l};
   font-weight: ${fontWeights.medium};
+  margin-top: ${spacing.space6x};
 `
 
 export const Content = styled.div`
-  padding: ${spacing.space5x} ${spacing.space2x};
+  padding: ${spacing.space5x} ${spacing.space1x} ${spacing.space3x};
   text-align: center;
+`
+
+export const TransactionalCost = styled(Text)`
+  width: 95%;
+  margin: 0 auto;
 `

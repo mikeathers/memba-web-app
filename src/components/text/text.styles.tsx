@@ -13,46 +13,46 @@ import {
 
 export interface StyledTextProps {
   color?: keyof Colors
-  marginBottomX?: keyof Spacing
-  marginTopX?: keyof Spacing
-  marginLeftX?: keyof Spacing
-  marginRightX?: keyof Spacing
-  textAlign?: 'center'
+  $marginBottomX?: keyof Spacing
+  $marginTopX?: keyof Spacing
+  $marginLeftX?: keyof Spacing
+  $marginRightX?: keyof Spacing
+  $textAlign?: 'center'
 }
 
 const margins = css<StyledTextProps>`
-  ${({marginTopX}) => {
-    if (marginTopX)
+  ${({$marginTopX}) => {
+    if ($marginTopX)
       return css`
-        margin-top: ${spacing[marginTopX]};
+        margin-top: ${spacing[$marginTopX]};
       `
   }}
 
-  ${({marginBottomX}) => {
-    if (marginBottomX)
+  ${({$marginBottomX}) => {
+    if ($marginBottomX)
       return css`
-        margin-bottom: ${spacing[marginBottomX]};
+        margin-bottom: ${spacing[$marginBottomX]};
       `
   }}
 
-  ${({marginRightX}) => {
-    if (marginRightX)
+  ${({$marginRightX}) => {
+    if ($marginRightX)
       return css`
-        margin-right: ${spacing[marginRightX]};
+        margin-right: ${spacing[$marginRightX]};
       `
   }}
 
-  ${({marginLeftX}) => {
-    if (marginLeftX)
+  ${({$marginLeftX}) => {
+    if ($marginLeftX)
       return css`
-        margin-left: ${spacing[marginLeftX]};
+        margin-left: ${spacing[$marginLeftX]};
       `
   }}
 `
 
 const styledTextAlign = css<StyledTextProps>`
-  ${({textAlign}) => {
-    if (textAlign === 'center') {
+  ${({$textAlign}) => {
+    if ($textAlign === 'center') {
       return css`
         text-align: center;
       `

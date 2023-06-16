@@ -1,6 +1,25 @@
 'use client'
-import {Container} from './button.styles'
+import type React from 'react'
 
-export const Button = () => {
-  return <Container>Button</Container>
+import type {Spacing} from '@/styles'
+
+
+import {StyledButton} from './button.styles'
+
+export interface ButtonProps {
+  children: string
+  variant: 'primary' | 'secondary' | 'text'
+  $marginBottomX?: keyof Spacing
+  $marginTopX?: keyof Spacing
+  $marginLeftX?: keyof Spacing
+  $marginRightX?: keyof Spacing
+}
+
+export const Button: React.FC<ButtonProps> = (props) => {
+  const {children, variant, ...rest} = props
+  return (
+    <StyledButton variant={variant} {...rest}>
+      {children}
+    </StyledButton>
+  )
 }
