@@ -178,7 +178,7 @@ export const createOpenNextDistribution = (
       }),
       viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       compress: true,
-      cachePolicy: cachePolicy,
+      // cachePolicy: cachePolicy,
       originRequestPolicy: props.originRequestPolicy,
     },
     additionalBehaviors: {
@@ -209,7 +209,7 @@ export const createBehaviour = (
     origin,
     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
     allowedMethods: AllowedMethods.ALLOW_ALL,
-    cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
+    // cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
     compress: true,
     ...props,
   }

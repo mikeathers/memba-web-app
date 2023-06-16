@@ -1,7 +1,10 @@
 'use client'
 import type React from 'react'
+import {useRouter} from 'next/navigation'
 
 import {PricingCard, Text} from '@/components'
+import {useCustomerStore} from '@/domains/customers/customers.store'
+import {ROUTES} from '@/config'
 
 import {CardsContainer, Container, Content} from './pricing-plans.styles'
 
@@ -9,8 +12,19 @@ interface PricingPlansProps {
   content: PricingPlansContent
 }
 
+const FREE_TIER = 'FREE_TIER'
+const BASIC_TIER = 'BASIC_TIER'
+const PREMIUM_TIER = 'PREMIUM_TIER'
+
 export const PricingPlansComponent: React.FC<PricingPlansProps> = (props) => {
   const {content} = props
+  const {setTier} = useCustomerStore()
+  const router = useRouter()
+
+  const handleGetStartedClick = (tier: string) => {
+    setTier(tier)
+    router.push(ROUTES.NEW_CUSTOMER)
+  }
 
   return (
     <Container>
@@ -23,7 +37,7 @@ export const PricingPlansComponent: React.FC<PricingPlansProps> = (props) => {
             pricePerMonth={content.freeTierPricePerMonth}
             numberOfCustomers={content.freeTierNumberOfCustomer}
             transactionalCosts={content.transactionalCosts}
-            getStartedClick={() => null}
+            getStartedClick={() => handleGetStartedClick(FREE_TIER)}
             getStarted={content.getStarted}
             findOutMore={content.findOutMore}
             findOutMoreClick={() => null}
@@ -34,7 +48,7 @@ export const PricingPlansComponent: React.FC<PricingPlansProps> = (props) => {
             pricePerMonth={content.basicTierPricePerMonth}
             numberOfCustomers={content.basicTierNumberOfCustomer}
             transactionalCosts={content.transactionalCosts}
-            getStartedClick={() => null}
+            getStartedClick={() => handleGetStartedClick(BASIC_TIER)}
             getStarted={content.getStarted}
             findOutMore={content.findOutMore}
             findOutMoreClick={() => null}
@@ -45,7 +59,7 @@ export const PricingPlansComponent: React.FC<PricingPlansProps> = (props) => {
             pricePerMonth={content.premiumTierPricePerMonth}
             numberOfCustomers={content.premiumTierNumberOfCustomer}
             transactionalCosts={content.transactionalCosts}
-            getStartedClick={() => null}
+            getStartedClick={() => handleGetStartedClick(PREMIUM_TIER)}
             getStarted={content.getStarted}
             findOutMore={content.findOutMore}
             findOutMoreClick={() => null}

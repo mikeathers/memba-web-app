@@ -3,7 +3,6 @@ import type React from 'react'
 
 import type {Spacing} from '@/styles'
 
-
 import {StyledButton} from './button.styles'
 
 export interface ButtonProps {
