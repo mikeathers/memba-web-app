@@ -3,9 +3,9 @@ import type React from 'react'
 import {useRouter} from 'next/navigation'
 
 import {PricingCard, Text} from '@/components'
-import {useCustomerStore} from '@/domains/customers/customers.store'
 import {ROUTES} from '@/config'
 
+import {useCustomerStore} from '../customers.store'
 import {CardsContainer, Container, Content} from './pricing-plans.styles'
 
 interface PricingPlansProps {

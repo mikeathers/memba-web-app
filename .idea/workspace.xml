@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ffe001d-6583-4d88-b2fe-cf57d1814e7a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/my-document.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/registry.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/src/aws/s3/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/s3/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +81,7 @@
       <workItem from="1686817849106" duration="1057000" />
       <workItem from="1686818939108" duration="1999000" />
       <workItem from="1686821235344" duration="1552000" />
-      <workItem from="1686822939913" duration="42798000" />
+      <workItem from="1686822939913" duration="44844000" />
     </task>
     <servers />
   </component>

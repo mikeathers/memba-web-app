@@ -1,14 +1,14 @@
 'use client'
 import type React from 'react'
 import {object, string} from 'yup'
+import {Formik} from 'formik'
 
-import {useCustomerStore} from '@/domains/customers/customers.store'
 import {Button, Text, TextInput} from '@/components'
 import {passwordValidation, sentenceCase} from '@/utils'
-
-import {Container, YourPlanCard, YourPlanContainer} from './new-customer.styles'
-import {Formik} from 'formik'
 import {colorTokens, spacingTokens} from '@/styles'
+
+import {useCustomerStore} from '../customers.store'
+import {Container, YourPlanCard, YourPlanContainer} from './new-customer.styles'
 
 interface NewCustomersComponentProps {
   content: NewCustomerContent

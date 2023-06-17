@@ -2,8 +2,8 @@ import './globals.css'
 
 import {Auth} from '@aws-amplify/auth'
 import {Poppins} from 'next/font/google'
-
-import {UnauthenticatedWrapper} from '@/components'
+import {App} from '@/app/app'
+import StyledComponentsRegistry from '@/app/registry'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -28,7 +28,9 @@ export default function RootLayout({children}: {children: JSX.Element}) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <body className={poppins.className}>
-        <UnauthenticatedWrapper>{children}</UnauthenticatedWrapper>
+        <StyledComponentsRegistry>
+          <App>{children}</App>
+        </StyledComponentsRegistry>
       </body>
     </html>
   )
