@@ -10,6 +10,8 @@
       <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/scripts/deploy_dev.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/scripts/deploy_dev.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/scripts/deploy_prod.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/scripts/deploy_prod.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/scripts/lint_test_build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/scripts/lint_test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jest.setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.setup.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
@@ -182,7 +184,7 @@
       <workItem from="1687155711237" duration="1995000" />
       <workItem from="1687159343405" duration="1752000" />
       <workItem from="1687161721127" duration="22000" />
-      <workItem from="1687161756338" duration="9706000" />
+      <workItem from="1687161756338" duration="10435000" />
     </task>
     <servers />
   </component>
