@@ -3,7 +3,7 @@ import type React from 'react'
 import {useRouter} from 'next/navigation'
 
 import {PricingCard, Text} from '@/components'
-import {ROUTES} from '@/config'
+import {CONFIG} from '@/config'
 
 import {useCustomerStore} from '../customers.store'
 import {CardsContainer, Container, Content} from './pricing-plans.styles'
@@ -23,7 +23,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = (props) => {
 
   const handleGetStartedClick = (tier: string) => {
     setTier(tier)
-    router.push(ROUTES.NEW_CUSTOMER)
+    router.push(CONFIG.PAGE_ROUTES.NEW_CUSTOMER)
   }
 
   return (

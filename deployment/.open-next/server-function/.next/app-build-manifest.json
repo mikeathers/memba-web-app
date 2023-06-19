@@ -1,0 +1,51 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack-cdb4bc6c5142e61d.js",
+      "static/chunks/2443530c-d4a6bd7fc7f21e3c.js",
+      "static/chunks/488-b4b91b085767513b.js",
+      "static/chunks/main-app-5ab663037e874ee1.js",
+      "static/chunks/707-e75ce5f3100bcedb.js",
+      "static/css/dbc3840bcb631cd5.css",
+      "static/chunks/app/page-d7f0851827c8626b.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-cdb4bc6c5142e61d.js",
+      "static/chunks/2443530c-d4a6bd7fc7f21e3c.js",
+      "static/chunks/488-b4b91b085767513b.js",
+      "static/chunks/main-app-5ab663037e874ee1.js",
+      "static/css/9a2f22bdbcd94310.css",
+      "static/chunks/app/layout-ab75964898f73b61.js"
+    ],
+    "/loading": [
+      "static/chunks/webpack-cdb4bc6c5142e61d.js",
+      "static/chunks/2443530c-d4a6bd7fc7f21e3c.js",
+      "static/chunks/488-b4b91b085767513b.js",
+      "static/chunks/main-app-5ab663037e874ee1.js",
+      "static/chunks/app/loading-a049ea083baa8e77.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-cdb4bc6c5142e61d.js",
+      "static/chunks/2443530c-d4a6bd7fc7f21e3c.js",
+      "static/chunks/488-b4b91b085767513b.js",
+      "static/chunks/main-app-5ab663037e874ee1.js",
+      "static/chunks/707-e75ce5f3100bcedb.js",
+      "static/css/dbc3840bcb631cd5.css",
+      "static/chunks/app/about/page-8164536fce0068a2.js"
+    ],
+    "/(auth)/(tenants)/customer-login/page": [
+      "static/chunks/webpack-cdb4bc6c5142e61d.js",
+      "static/chunks/2443530c-d4a6bd7fc7f21e3c.js",
+      "static/chunks/488-b4b91b085767513b.js",
+      "static/chunks/main-app-5ab663037e874ee1.js",
+      "static/chunks/app/(auth)/(tenants)/customer-login/page-bbfb15c121dc6cac.js"
+    ],
+    "/(auth)/(tenants)/new-customer/page": [
+      "static/chunks/webpack-cdb4bc6c5142e61d.js",
+      "static/chunks/2443530c-d4a6bd7fc7f21e3c.js",
+      "static/chunks/488-b4b91b085767513b.js",
+      "static/chunks/main-app-5ab663037e874ee1.js",
+      "static/chunks/app/(auth)/(tenants)/new-customer/page-136d29b9ddc3a339.js"
+    ]
+  }
+}

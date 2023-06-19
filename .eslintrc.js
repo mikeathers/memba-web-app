@@ -57,6 +57,7 @@ module.exports = {
       rules: {
         'import/no-named-as-default-member': 'off',
         'react/react-in-jsx-scope': 'off',
+        '@typescript-eslint/no-unsafe-return': 'warn',
       },
     },
     {

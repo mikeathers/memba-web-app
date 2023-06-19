@@ -2,43 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ffe001d-6583-4d88-b2fe-cf57d1814e7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jest.config.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/scripts/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/env/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/customers/create-account.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/customers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/memba-web-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/memba-web-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/.open-next/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/.open-next/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/.open-next/image-optimization-function/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/.open-next/server-function/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/scripts/lint_test_build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/scripts/lint_test.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jest.setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/(customers)/customer-login/page.styles.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing-card/pricing-card.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing-card/pricing-card.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing-card/pricing.card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing-card/pricing.card.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(auth)/(customers)/pricing-plans/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/customers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/customers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tokens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tokens.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/locales/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-utils/__mocks__/locales/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/setup-tests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,14 +68,14 @@
       <recent name="$PROJECT_DIR$/src/styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/(auth)/(customers)" />
       <recent name="$PROJECT_DIR$/src/app/(auth)/(users)" />
       <recent name="$PROJECT_DIR$/src/app/(auth)/(tenants)" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/pages/(auth)" />
-      <recent name="$PROJECT_DIR$/src/app/(auth)" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.New Customer">
+  <component name="RunManager" selected="Jest.Pricing Plans">
     <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -112,6 +95,21 @@
       <test-file value="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" />
       <test-names>
         <test-name value="New Customer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="New Customer.Form validation.should show validation messages when form is submitted empty" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" />
+      <test-names>
+        <test-name value="New Customer" />
+        <test-name value="Form validation" />
+        <test-name value="should show validation messages when form is submitted empty" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -144,14 +142,16 @@
     </configuration>
     <list>
       <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Jest.New Customer.Form validation.should show validation messages when form is submitted empty" />
       <item itemvalue="Jest.New Customer" />
       <item itemvalue="Jest.Pricing Plans" />
       <item itemvalue="Jest.Pricing Plans.should render three pricing plan cards" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.New Customer" />
         <item itemvalue="Jest.Pricing Plans" />
+        <item itemvalue="Jest.New Customer" />
+        <item itemvalue="Jest.New Customer.Form validation.should show validation messages when form is submitted empty" />
         <item itemvalue="Jest.Pricing Plans.should render three pricing plan cards" />
       </list>
     </recent_temporary>
@@ -182,7 +182,7 @@
       <workItem from="1687155711237" duration="1995000" />
       <workItem from="1687159343405" duration="1752000" />
       <workItem from="1687161721127" duration="22000" />
-      <workItem from="1687161756338" duration="877000" />
+      <workItem from="1687161756338" duration="9706000" />
     </task>
     <servers />
   </component>
@@ -204,16 +204,5 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/deployment" />
     </ignored-roots>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

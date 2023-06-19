@@ -38,9 +38,17 @@ declare global {
       emailPlaceholder: string
       password: string
       passwordPlaceholder: string
-      passwordValidationMessage: string
-      passwordLengthMessage: string
       createAccount: string
+      validation: {
+        passwordValidationMessage: string
+        passwordLengthMessage: string
+        companyName: string
+        emailAddress: string
+        emailAddressFormat: string
+        firstName: string
+        lastName: string
+        password: string
+      }
     }
   }
   type PricingPlansContent = {

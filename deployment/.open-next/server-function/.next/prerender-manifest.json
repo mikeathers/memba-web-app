@@ -1,0 +1,38 @@
+{
+  "version": 4,
+  "routes": {
+    "/favicon.ico": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/x-icon",
+        "x-next-cache-tags": "/favicon.ico/route"
+      },
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/favicon.ico",
+      "dataRoute": null
+    },
+    "/customer-login": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/customer-login",
+      "dataRoute": "/customer-login.rsc"
+    },
+    "/about": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/about",
+      "dataRoute": "/about.rsc"
+    },
+    "/new-customer": {
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/new-customer",
+      "dataRoute": "/new-customer.rsc"
+    },
+    "/": {"initialRevalidateSeconds": false, "srcRoute": "/", "dataRoute": "/index.rsc"}
+  },
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "5c8da73321224f5848417706949bbc07",
+    "previewModeSigningKey": "c65639416658310928c99ba70b8638736912a19366c4f8492777c1abcc1d42a9",
+    "previewModeEncryptionKey": "2abb5c53b3391900ffbd8dba57805918a6cbd03f9f121b0b8ba4caa80aca5526"
+  }
+}

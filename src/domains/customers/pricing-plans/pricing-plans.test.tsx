@@ -1,7 +1,7 @@
 import {fireEvent, render} from '@testing-library/react'
 import {PricingPlans} from '@/domains'
 import {mockPricingPlansContent} from '@/test-utils'
-import {ROUTES} from '@/config'
+import {CONFIG} from '@/config'
 import {useRouter} from 'next/navigation'
 import {mocked} from 'jest-mock'
 import {useCustomerStore} from '../customers.store'
@@ -43,7 +43,7 @@ describe('Pricing Plans', () => {
 
     fireEvent.click(getAllByText('Get started')[0])
 
-    expect(mockPush).toHaveBeenCalledWith(ROUTES.NEW_CUSTOMER)
+    expect(mockPush).toHaveBeenCalledWith(CONFIG.PAGE_ROUTES.NEW_CUSTOMER)
   })
 
   it('should call setTier when clicking get started', () => {

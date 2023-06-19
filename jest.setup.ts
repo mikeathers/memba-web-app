@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom/extend-expect'
+process.env.NEXT_PUBLIC_IS_PRODUCTION = 'false'
 
 jest.mock('next/navigation', () => ({
   useRouter: () => ({

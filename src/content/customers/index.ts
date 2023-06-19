@@ -17,10 +17,18 @@ export const newCustomer: NewCustomerContent = {
     emailPlaceholder: 'Enter your email',
     password: 'Password:',
     passwordPlaceholder: 'Create a password',
-    passwordValidationMessage:
-      'Password should include lowercase, uppercase, digits and symbols.',
-    passwordLengthMessage: 'Password should be at least 6 characters.',
     createAccount: 'Create account',
+    validation: {
+      passwordValidationMessage:
+        '*Password should include lowercase, uppercase, digits and symbols.',
+      passwordLengthMessage: '*Password should be at least 6 characters.',
+      companyName: '*Company name is required',
+      firstName: '*First name is required',
+      lastName: '*Last name is required',
+      emailAddress: '*Email address is required',
+      emailAddressFormat: '*Email address is not valid',
+      password: '*Password is required',
+    },
   },
 }
 

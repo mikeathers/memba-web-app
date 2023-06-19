@@ -16,7 +16,7 @@ import {
   YourPlanContainer,
 } from './new-customer.styles'
 import {useRouter} from 'next/navigation'
-import {ROUTES} from '@/config'
+import {CONFIG} from '@/config'
 
 interface NewCustomersComponentProps {
   content: NewCustomerContent
@@ -32,7 +32,7 @@ const Card: React.FC<YourPlanCardProps> = ({tier, pricing, change}) => {
   const router = useRouter()
 
   const handleChangePlanClick = () => {
-    router.push(ROUTES.PRICING_PLANS)
+    router.push(CONFIG.PAGE_ROUTES.PRICING_PLANS)
   }
 
   return (
@@ -60,21 +60,21 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
   }
 
   const formSchema = object({
-    emailAddress: string().required().email(),
-    firstName: string().required(),
-    lastName: string().required(),
-    companyName: string().required(),
+    emailAddress: string()
+      .required(content.form.validation.emailAddress)
+      .email(content.form.validation.emailAddressFormat),
+    firstName: string().required(content.form.validation.firstName),
+    lastName: string().required(content.form.validation.lastName),
+    companyName: string().required(content.form.validation.companyName),
     password: string()
-      .required()
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-      .min(6, content.form.passwordLengthMessage)
-      .test('isValidPassword', content.form.passwordValidationMessage, (value) =>
-        passwordValidation(value),
+      .required(content.form.validation.password)
+      .min(6, content.form.validation.passwordLengthMessage)
+      .test(
+        'isValidPassword',
+        content.form.validation.passwordValidationMessage,
+        (value) => passwordValidation(value),
       ),
   })
-
-  const shouldShowPasswordMessage = (error: string | undefined) =>
-    error && (error.includes('symbols') || error.includes('6 characters'))
 
   return (
     <Container>
@@ -148,11 +148,31 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
                   type={'password'}
                 />
 
-                {shouldShowPasswordMessage(errors.password) && (
-                  <Text type={'body'} color={colorTokens.reds500}>
-                    {errors.password}
-                  </Text>
-                )}
+                <Text type={'body'} color={colorTokens.reds500}>
+                  {errors.firstName}
+                </Text>
+
+                <Text type={'body'} color={colorTokens.reds500}>
+                  {errors.lastName}
+                </Text>
+
+                <Text type={'body'} color={colorTokens.reds500}>
+                  {errors.companyName}
+                </Text>
+
+                <Text type={'body'} color={colorTokens.reds500}>
+                  {errors.emailAddress}
+                </Text>
+
+                <Text type={'body'} color={colorTokens.reds500}>
+                  {errors.password}
+                </Text>
+
+                {/*{shouldShowPasswordMessage(errors.password) && (*/}
+                {/*  <Text type={'body'} color={colorTokens.reds500}>*/}
+                {/*    {errors.password}*/}
+                {/*  </Text>*/}
+                {/*)}*/}
 
                 <Button
                   variant={'primary'}
