@@ -127,14 +127,14 @@ export const createCachePolicy = (
   props?: CachePolicyProps,
 ) => {
   return new CachePolicy(scope, id, {
-    queryStringBehavior: CacheQueryStringBehavior.all(),
-    headerBehavior: CacheHeaderBehavior.allowList('Accept'),
-    cookieBehavior: CacheCookieBehavior.all(),
+    // queryStringBehavior: CacheQueryStringBehavior.all(),
+    // headerBehavior: CacheHeaderBehavior.allowList('Accept'),
+    // cookieBehavior: CacheCookieBehavior.all(),
     defaultTtl: Duration.days(0),
     maxTtl: Duration.days(0),
     minTtl: Duration.days(0),
-    enableAcceptEncodingBrotli: true,
-    enableAcceptEncodingGzip: true,
+    // enableAcceptEncodingBrotli: true,
+    // enableAcceptEncodingGzip: true,
     comment: 'OpenNext server response cache policy',
     ...props, // Any Overrides
   })

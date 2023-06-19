@@ -136,9 +136,9 @@ export class NextJsStack extends Stack {
     })
 
     const staticFileBehaviour = createBehaviour(s3BucketOrigin, {
-      // cachePolicy: CachePolicy.CACHING_OPTIMIZED,
+      cachePolicy: CachePolicy.CACHING_OPTIMIZED,
       allowedMethods: AllowedMethods.ALLOW_GET_HEAD_OPTIONS,
-      // cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
+      cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
       originRequestPolicy,
     })
     const distribution = createOpenNextDistribution(
