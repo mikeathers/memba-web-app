@@ -127,14 +127,14 @@ export const createCachePolicy = (
   props?: CachePolicyProps,
 ) => {
   return new CachePolicy(scope, id, {
-    // queryStringBehavior: CacheQueryStringBehavior.all(),
-    // headerBehavior: CacheHeaderBehavior.allowList('Accept'),
-    // cookieBehavior: CacheCookieBehavior.all(),
+    queryStringBehavior: CacheQueryStringBehavior.all(),
+    headerBehavior: CacheHeaderBehavior.allowList('Accept'),
+    cookieBehavior: CacheCookieBehavior.all(),
     defaultTtl: Duration.days(0),
-    maxTtl: Duration.days(0),
+    maxTtl: Duration.days(365),
     minTtl: Duration.days(0),
-    // enableAcceptEncodingBrotli: true,
-    // enableAcceptEncodingGzip: true,
+    enableAcceptEncodingBrotli: true,
+    enableAcceptEncodingGzip: true,
     comment: 'OpenNext server response cache policy',
     ...props, // Any Overrides
   })
@@ -178,7 +178,7 @@ export const createOpenNextDistribution = (
       }),
       viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       compress: true,
-      // cachePolicy: cachePolicy,
+      cachePolicy: cachePolicy,
       originRequestPolicy: props.originRequestPolicy,
     },
     additionalBehaviors: {
@@ -209,7 +209,7 @@ export const createBehaviour = (
     origin,
     viewerProtocolPolicy: ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
     allowedMethods: AllowedMethods.ALLOW_ALL,
-    // cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
+    cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
     compress: true,
     ...props,
   }
