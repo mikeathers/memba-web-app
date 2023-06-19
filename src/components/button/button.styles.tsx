@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import {styled, css} from 'styled-components'
 
 import {borderRadius, colors, fontSizes, spacing} from '@/styles'
 
@@ -46,6 +46,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   outline: none;
   height: 37px;
   font-size: ${fontSizes.s};
+  cursor: pointer;
 
   ${({variant}) => {
     if (variant === 'primary') {

@@ -1,11 +1,11 @@
 /* eslint-disable */
 import {pricingPlans} from '@/content'
-import {PricingPlansComponent} from '@/domains'
+import {PricingPlans} from '@/domains'
 
-const PricingPlans = () => {
+const PricingPlansPage = () => {
   const content = pricingPlans
 
-  return <PricingPlansComponent content={content} />
+  return <PricingPlans content={content} />
 }
 
-export default PricingPlans
+export default PricingPlansPage

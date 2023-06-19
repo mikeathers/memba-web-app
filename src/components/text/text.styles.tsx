@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components'
+import {styled, css} from 'styled-components'
 
 import type {Colors, Spacing} from '@/styles'
 import {
@@ -125,8 +125,8 @@ export const BodyBold = styled(Body)`
 `
 
 export const Caption = styled(BaseText)`
-  font-weight: ${fontWeights.semibold};
-  font-size: ${fontSizes.xs};
+  font-weight: ${fontWeights.regular};
+  font-size: ${fontSizes.xxs};
   line-height: ${lineHeights.small};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
 `

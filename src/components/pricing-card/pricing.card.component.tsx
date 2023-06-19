@@ -11,7 +11,8 @@ import {
   TitleText,
   TransactionalCost,
 } from './pricing-card.styles'
-import {Text, Button} from '../'
+import {Text} from '../text'
+import {Button} from '../button'
 
 interface PricingCardProps {
   titleNumber: string

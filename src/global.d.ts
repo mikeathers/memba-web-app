@@ -26,6 +26,7 @@ declare global {
     freePricing: string
     basicPricing: string
     premiumPricing: string
+    change: string
     form: {
       companyName: string
       companyNamePlaceholder: string

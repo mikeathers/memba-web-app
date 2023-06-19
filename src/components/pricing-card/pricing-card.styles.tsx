@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import {styled} from 'styled-components'
 import {
   borderRadius,
   colors,
@@ -7,7 +7,7 @@ import {
   mediaQueries,
   spacing,
 } from '@/styles'
-import {Text} from '../'
+import {Text} from '../text'
 
 export const Container = styled.div`
   border-radius: ${borderRadius.rounded};
@@ -18,9 +18,15 @@ export const Container = styled.div`
   padding: 6px;
   margin-top: ${spacing.space4x};
 
-  @media (${mediaQueries.m}) {
-    width: 380px;
+  @media (${mediaQueries.s}) {
     margin-right: ${spacing.space4x};
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (${mediaQueries.l}) {
+    width: 380px;
   }
 `
 

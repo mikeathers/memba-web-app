@@ -16,7 +16,7 @@ const FREE_TIER = 'Free'
 const BASIC_TIER = 'Basic'
 const PREMIUM_TIER = 'Premium'
 
-export const PricingPlansComponent: React.FC<PricingPlansProps> = (props) => {
+export const PricingPlans: React.FC<PricingPlansProps> = (props) => {
   const {content} = props
   const {setTier} = useCustomerStore()
   const router = useRouter()

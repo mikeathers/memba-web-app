@@ -5,6 +5,7 @@ export const newCustomer: NewCustomerContent = {
   freePricing: '£0.00',
   basicPricing: '£30.00',
   premiumPricing: '£50.00',
+  change: 'Change',
   form: {
     companyName: 'Company name:',
     companyNamePlaceholder: 'Enter your company name',
@@ -38,6 +39,6 @@ export const pricingPlans: PricingPlansContent = {
   premiumTierPricePerMonth: '£50.00/pm',
   premiumTierNumberOfCustomer: 'Unlimited customers',
   transactionalCosts: 'We will charge you 1% per transaction you make within the app',
-  getStarted: 'Get Started',
+  getStarted: 'Get started',
   findOutMore: 'Find out more',
 }

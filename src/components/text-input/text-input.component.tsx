@@ -2,10 +2,10 @@
 import type React from 'react'
 
 import type {Spacing} from '@/styles'
-
-import {Text} from '../'
-import {Container, StyledTextInput} from './text-input.styles'
 import {spacingTokens} from '@/styles'
+
+import {Text} from '../text'
+import {Container, StyledTextInput} from './text-input.styles'
 
 export interface TextInputProps extends React.HTMLProps<HTMLInputElement> {
   $marginBottomX?: keyof Spacing

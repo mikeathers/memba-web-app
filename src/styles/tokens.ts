@@ -1,4 +1,4 @@
-import type {IconNames} from '@/components'
+import type {IconNames} from '../components'
 import type {Colors, Spacing} from '@/styles'
 
 export const spacingTokens = {

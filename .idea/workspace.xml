@@ -2,15 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ffe001d-6583-4d88-b2fe-cf57d1814e7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/my-document.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/registry.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jest.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/memba-web-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/memba-web-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/.open-next/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/.open-next/assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/.open-next/image-optimization-function/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/.open-next/server-function/.gitkeep" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/aws/s3/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/s3/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(auth)/(customers)/customer-login/page.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pricing-plans/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pricing-card/pricing-card.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing-card/pricing-card.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pricing-card/pricing.card.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pricing-card/pricing.card.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/customers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/customers/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tokens.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/tokens.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/locales/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-utils/__mocks__/locales/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test-utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test-utils/setup-tests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,25 +60,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/src/utils&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/michaelatherton/Development/memba/memba-web-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/michaelatherton/Development/memba/memba-web-app/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/michaelatherton/Development/memba/memba-web-app/node_modules/prettier",
+    "settings.editor.selected.configurable": "Errors",
+    "ts.external.directory.path": "/Users/michaelatherton/Development/memba/memba-web-app/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/styles" />
@@ -61,6 +91,70 @@
       <recent name="$PROJECT_DIR$/src/pages/(auth)" />
       <recent name="$PROJECT_DIR$/src/app/(auth)" />
     </key>
+  </component>
+  <component name="RunManager" selected="Jest.New Customer">
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="New Customer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" />
+      <test-names>
+        <test-name value="New Customer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Pricing Plans" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" />
+      <test-names>
+        <test-name value="Pricing Plans" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Pricing Plans.should render three pricing plan cards" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" />
+      <test-names>
+        <test-name value="Pricing Plans" />
+        <test-name value="should render three pricing plan cards" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jest.All Tests" />
+      <item itemvalue="Jest.New Customer" />
+      <item itemvalue="Jest.Pricing Plans" />
+      <item itemvalue="Jest.Pricing Plans.should render three pricing plan cards" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.New Customer" />
+        <item itemvalue="Jest.Pricing Plans" />
+        <item itemvalue="Jest.Pricing Plans.should render three pricing plan cards" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,7 +175,14 @@
       <workItem from="1686817849106" duration="1057000" />
       <workItem from="1686818939108" duration="1999000" />
       <workItem from="1686821235344" duration="1552000" />
-      <workItem from="1686822939913" duration="44844000" />
+      <workItem from="1686822939913" duration="53427000" />
+      <workItem from="1687111425687" duration="715000" />
+      <workItem from="1687151760300" duration="2814000" />
+      <workItem from="1687154608055" duration="1084000" />
+      <workItem from="1687155711237" duration="1995000" />
+      <workItem from="1687159343405" duration="1752000" />
+      <workItem from="1687161721127" duration="22000" />
+      <workItem from="1687161756338" duration="877000" />
     </task>
     <servers />
   </component>
@@ -103,5 +204,16 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/deployment" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

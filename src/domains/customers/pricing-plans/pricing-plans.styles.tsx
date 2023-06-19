@@ -1,10 +1,16 @@
-import styled from 'styled-components'
+import {styled} from 'styled-components'
 import {mediaQueries} from '@/styles'
 
 export const Container = styled.div`
-  @media (${mediaQueries.m}) {
+  @media (${mediaQueries.s}) {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
+  }
+  @media (${mediaQueries.l}) {
+    margin-top: 40px;
+  }
+  @media (${mediaQueries.xl}) {
     margin-top: 100px;
   }
 `

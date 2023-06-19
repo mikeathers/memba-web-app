@@ -10,14 +10,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 8,
   },
-  plugins: [
-    'import',
-    '@typescript-eslint',
-    'react',
-    'react-hooks',
-    'unicorn',
-    'styled-components-a11y',
-  ],
+  plugins: ['import', '@typescript-eslint', 'react', 'react-hooks', 'unicorn'],
   extends: [
     'next/core-web-vitals',
     'eslint:recommended',
@@ -26,12 +19,17 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:@next/next/recommended',
-    'plugin:storybook/recommended',
-    'plugin:styled-components-a11y/recommended',
+    'plugin:import/recommended',
   ],
   rules: {
+    'import/no-cycle': [
+      'error',
+      {
+        maxDepth: 10,
+        ignoreExternal: true,
+      },
+    ],
     'unicorn/filename-case': [
       'error',
       {
@@ -53,47 +51,18 @@ module.exports = {
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
-        'plugin:react/jsx-runtime',
         'plugin:react-hooks/recommended',
-        'plugin:jsx-a11y/recommended',
         'plugin:@next/next/recommended',
       ],
       rules: {
-        'react-hooks/exhaustive-deps': 'off',
+        'import/no-named-as-default-member': 'off',
         'react/react-in-jsx-scope': 'off',
-        '@typescript-eslint/comma-dangle': 'off',
-        '@typescript-eslint/consistent-type-imports': 'error',
-        'import/prefer-default-export': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
-        'unused-imports/no-unused-imports': 'error',
-        'unused-imports/no-unused-vars': [
-          'error',
-          {
-            argsIgnorePattern: '^_',
-          },
-        ],
-        'react-hooks/rules-of-hooks': 'error',
       },
     },
     {
       files: ['**/*.{test,tests,stories,styles}.{ts,tsx}'],
       rules: {
-        '@typescript-eslint/no-unsafe-return': 'off',
-        'react/display-name': 'off',
-        'jsx-a11y/alt-text': 'off',
-        'jsx-a11y/click-events-have-key-events': 'off',
-        'jsx-a11y/anchor-has-content': 'off',
-        'jsx-a11y/no-static-element-interactions': 'off',
-        'jsx-a11y/anchor-is-valid': 'off',
-        '@typescript-eslint/no-unsafe-assignment': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/no-empty-function': 'off',
-      },
-    },
-    {
-      files: ['./src/app/**/*.{tsx,ts}'],
-      rules: {
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-unsafe-argument': 'off',
       },
     },
     {
