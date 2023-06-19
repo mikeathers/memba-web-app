@@ -4,6 +4,7 @@ import {Auth} from '@aws-amplify/auth'
 import {Poppins} from 'next/font/google'
 import {App} from '@/app/app'
 import StyledComponentsRegistry from '@/app/registry'
+import {CONFIG} from '@/config'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -14,9 +15,9 @@ const poppins = Poppins({
 Auth.configure({
   mandatorySignIn: false,
   region: 'eu-west-2',
-  userPoolId: 'eu-west-2_H6F7KWKl8',
-  identityPoolId: 'eu-west-2:c66b9ccc-9141-4ac7-a274-be74a27940bc',
-  userPoolWebClientId: '712hh8ocdqmu3g4se27deg555i',
+  userPoolId: CONFIG.AMPLIFY.USER_POOL_ID,
+  identityPoolId: CONFIG.AMPLIFY.IDENTITY_POOL_ID,
+  userPoolWebClientId: CONFIG.AMPLIFY.USER_WEB_CLIENT_ID,
 })
 
 export const metadata = {
