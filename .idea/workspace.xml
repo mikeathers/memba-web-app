@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ffe001d-6583-4d88-b2fe-cf57d1814e7a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/cloudfront/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/nextjs-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/nextjs-stack.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +162,7 @@
       <workItem from="1687155711237" duration="1995000" />
       <workItem from="1687159343405" duration="1752000" />
       <workItem from="1687161721127" duration="22000" />
-      <workItem from="1687161756338" duration="13380000" />
+      <workItem from="1687161756338" duration="14304000" />
     </task>
     <servers />
   </component>
