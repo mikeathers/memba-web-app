@@ -5,7 +5,7 @@ set -euo pipefail
 cd deployment
 
 echo "--- 🚀 Unzipping the build..."
-unzip -q prod-build.zip
+unzip -q -o prod-build.zip
 
 echo "--- 🚀 Installing npm dependencies..."
 yarn install --frozen-lockfile
