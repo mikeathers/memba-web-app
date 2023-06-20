@@ -1,4 +1,4 @@
-import {styled} from 'styled-components'
+import styled from 'styled-components'
 import {mediaQueries} from '@/styles'
 
 export const Container = styled.div`

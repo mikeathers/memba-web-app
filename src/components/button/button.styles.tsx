@@ -1,4 +1,4 @@
-import {styled, css} from 'styled-components'
+import styled, {css} from 'styled-components'
 
 import {borderRadius, colors, fontSizes, spacing} from '@/styles'
 

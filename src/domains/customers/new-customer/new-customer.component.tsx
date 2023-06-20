@@ -17,6 +17,8 @@ import {
 } from './new-customer.styles'
 import {useRouter} from 'next/navigation'
 import {CONFIG} from '@/config'
+import {createCustomerAccount} from '@/services'
+import {AxiosError} from "axios";
 
 interface NewCustomersComponentProps {
   content: NewCustomerContent
@@ -55,8 +57,20 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
     return ''
   }
 
-  const handleSubmitForm = (values: NewCustomerFormDetails) => {
-    console.log({values})
+  const handleSubmitForm = async (values: NewCustomerFormDetails) => {
+    const {companyName, ...rest} = values
+    try {
+      const result = await createCustomerAccount({
+        name: companyName,
+        hello: '',
+        tier,
+        ...rest,
+      })
+      console.log(result.body)
+    } catch (error: AxiosError) {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      console.log(error.response?.data.message)
+    }
   }
 
   const formSchema = object({
@@ -148,31 +162,35 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
                   type={'password'}
                 />
 
-                <Text type={'body'} color={colorTokens.reds500}>
-                  {errors.firstName}
-                </Text>
+                {errors.firstName && (
+                  <Text type={'body'} color={colorTokens.reds500}>
+                    {errors.firstName}
+                  </Text>
+                )}
 
-                <Text type={'body'} color={colorTokens.reds500}>
-                  {errors.lastName}
-                </Text>
+                {errors.lastName && (
+                  <Text type={'body'} color={colorTokens.reds500}>
+                    {errors.lastName}
+                  </Text>
+                )}
 
-                <Text type={'body'} color={colorTokens.reds500}>
-                  {errors.companyName}
-                </Text>
+                {errors.companyName && (
+                  <Text type={'body'} color={colorTokens.reds500}>
+                    {errors.companyName}
+                  </Text>
+                )}
 
-                <Text type={'body'} color={colorTokens.reds500}>
-                  {errors.emailAddress}
-                </Text>
+                {errors.emailAddress && (
+                  <Text type={'body'} color={colorTokens.reds500}>
+                    {errors.emailAddress}
+                  </Text>
+                )}
 
-                <Text type={'body'} color={colorTokens.reds500}>
-                  {errors.password}
-                </Text>
-
-                {/*{shouldShowPasswordMessage(errors.password) && (*/}
-                {/*  <Text type={'body'} color={colorTokens.reds500}>*/}
-                {/*    {errors.password}*/}
-                {/*  </Text>*/}
-                {/*)}*/}
+                {errors.password && (
+                  <Text type={'body'} color={colorTokens.reds500}>
+                    {errors.password}
+                  </Text>
+                )}
 
                 <Button
                   variant={'primary'}

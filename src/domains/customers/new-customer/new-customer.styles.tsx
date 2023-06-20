@@ -1,4 +1,4 @@
-import {styled} from 'styled-components'
+import styled from 'styled-components'
 import {borderRadius, colors, fontSizes, mediaQueries, spacing} from '@/styles'
 import type {HTMLProps} from 'react'
 

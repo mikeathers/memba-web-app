@@ -10,14 +10,17 @@ export const PAGE_ROUTES: PAGE_ROUTES = {
 
 interface API_ROUTES {
   USERS_API: string
+  TENANTS_API: string
 }
 
 const DEV_API_ROUTES: API_ROUTES = {
   USERS_API: 'https://users.dev.memba.co.uk',
+  TENANTS_API: 'https://tenants.dev.memba.co.uk',
 }
 
 const PROD_API_ROUTES: API_ROUTES = {
   USERS_API: 'https://users.memba.co.uk',
+  TENANTS_API: 'https://tenants.memba.co.uk',
 }
 
 interface ENDPOINTS {

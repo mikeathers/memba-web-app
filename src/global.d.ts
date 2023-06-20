@@ -16,6 +16,36 @@ declare global {
     | FormikErrors<any>[]
     | undefined
 
+  type BadResponse = {
+    statusCode: number
+    body: {
+      message: string
+    }
+  }
+
+  type RegisterTenantResponse = {
+    statusCode: number
+    body: {
+      message: string
+      result: {
+        id: string
+        name: string
+        tier: string
+        firstName: string
+        lastName: string
+        emailAddress: string
+        password: string
+        addressLineOne: string
+        addressLineTwo: string
+        doorNumber: string
+        townCity: string
+        postCode: string
+      }
+    }
+  }
+
+  /**** Content *****/
+
   type MiscContent = {
     allRightsReserved: string
   }

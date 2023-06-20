@@ -1,8 +1,22 @@
-import axios, {AxiosResponse} from 'axios'
-import useSWR from 'swr'
+import axios from 'axios'
+import {CONFIG} from '@/config'
 
-const fetcher = (url: string) => axios.get(url).then((res: AxiosResponse) => res.data)
+interface CreateCustomerAccountProps extends NewCustomerFormDetails {
+  tier: string
+}
 
-export const useCreateCustomerAccount = () => {
-  // const URL = CONFIG.
+const httpClient = axios.create()
+
+export const createCustomerAccount = async (props: CreateCustomerAccountProps) => {
+  const URL = `${CONFIG.API_ROUTES.TENANTS_API}/${CONFIG.ENDPOINTS.REGISTER_TENANT}`
+
+  const result = await httpClient.request<RegisterTenantResponse | BadResponse>({
+    url: URL,
+    method: 'POST',
+    data: props,
+  })
+
+  if (result.status === 200)
+    return result as RegisterTenantResponse
+  return result as BadResponse
 }

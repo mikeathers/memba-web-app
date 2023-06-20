@@ -1,6 +1,0 @@
-{
-  "MembaWebAppDeploymentStack-dev": {
-    "ImageOptimisationApiEndpoint42F74C33": "https://tb8q5aoq2h.execute-api.eu-west-2.amazonaws.com/prod/",
-    "ServerApiEndpoint04F19CCE": "https://jvvoasd7dh.execute-api.eu-west-2.amazonaws.com/prod/"
-  }
-}
