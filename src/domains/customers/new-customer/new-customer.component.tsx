@@ -1,7 +1,9 @@
 'use client'
+import axios from 'axios'
 import type React from 'react'
 import {object, string} from 'yup'
 import {Formik} from 'formik'
+import {useRouter} from 'next/navigation'
 
 import {Button, Text, TextInput} from '@/components'
 import {passwordValidation, sentenceCase} from '@/utils'
@@ -15,10 +17,11 @@ import {
   YourPlanChangeText,
   YourPlanContainer,
 } from './new-customer.styles'
-import {useRouter} from 'next/navigation'
 import {CONFIG} from '@/config'
 import {createCustomerAccount} from '@/services'
-import {AxiosError} from "axios";
+import {isHttpBadResponse} from '@/utils/type-guarding'
+import {useSafeAsync} from '@/hooks'
+import {useEffect, useState} from 'react'
 
 interface NewCustomersComponentProps {
   content: NewCustomerContent
@@ -49,7 +52,8 @@ const Card: React.FC<YourPlanCardProps> = ({tier, pricing, change}) => {
 export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
   const {content} = props
   const {tier} = useCustomerStore()
-
+  const {run, data, error, isLoading} = useSafeAsync()
+  const [fetchError, setFetchError] = useState<string>('')
   const getPricing = () => {
     if (tier == 'Free') return content.freePricing
     if (tier == 'Basic') return content.basicPricing
@@ -57,20 +61,34 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
     return ''
   }
 
+  useEffect(() => {
+    console.log({error, data, isLoading})
+
+    if (axios.isAxiosError(error)) {
+      if (isHttpBadResponse(error.response?.data)) {
+        if (error.response?.data.message.includes('already exists')) {
+          setFetchError('A tenant with the details you have provided already exists')
+        }
+      }
+    }
+  }, [error, data, isLoading])
+
   const handleSubmitForm = async (values: NewCustomerFormDetails) => {
     const {companyName, ...rest} = values
-    try {
-      const result = await createCustomerAccount({
+
+    await run(
+      createCustomerAccount({
         name: companyName,
         hello: '',
         tier,
         ...rest,
-      })
-      console.log(result.body)
-    } catch (error: AxiosError) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-      console.log(error.response?.data.message)
-    }
+      }),
+    )
+    // } catch (error) {
+    //   if (axios.isAxiosError(error) && isHttpBadResponse(error.response?.data)) {
+    //     console.log(error.response?.data.message)
+    //   }
+    // }
   }
 
   const formSchema = object({
@@ -192,7 +210,14 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
                   </Text>
                 )}
 
+                {fetchError && (
+                  <Text type={'body'} color={colorTokens.reds500}>
+                    {fetchError}
+                  </Text>
+                )}
+
                 <Button
+                  isLoading={isLoading}
                   variant={'primary'}
                   onClick={() => handleSubmit()}
                   $marginTopX={spacingTokens.space4x}

@@ -4,9 +4,9 @@ import {borderRadius, colors, fontSizes, spacing} from '@/styles'
 
 import type {ButtonProps} from './button.component'
 
-type StyledButtonProps = ButtonProps
+type StyledButtonProps = Omit<ButtonProps, 'isLoading'>
 
-const margins = css<ButtonProps>`
+const margins = css<StyledButtonProps>`
   ${({$marginTopX}) => {
     if ($marginTopX)
       return css`
@@ -81,4 +81,10 @@ export const StyledButton = styled.button<StyledButtonProps>`
   &:active {
     filter: brightness(85%);
   }
+`
+
+export const StyledLoadingContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `

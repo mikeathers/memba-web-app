@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin-bottom: ${spacing.space3x};
 `
 
-type StyledTextInputProps = TextInputProps
+type StyledTextInputProps = Omit<TextInputProps, 'ref'>
 
 export const StyledTextInput = styled.input<StyledTextInputProps>`
   width: 100%;

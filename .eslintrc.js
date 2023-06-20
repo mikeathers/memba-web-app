@@ -72,6 +72,12 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
       },
     },
+    {
+      files: ['./src/utils/type-guarding/*'],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 0,
+      },
+    },
   ],
   globals: {
     window: true,

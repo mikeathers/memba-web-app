@@ -17,10 +17,19 @@ declare global {
     | undefined
 
   type BadResponse = {
+    message: string
+  }
+  type OKResponse = {
     statusCode: number
     body: {
       message: string
     }
+  }
+
+  type CognitoError = {
+    name: string
+    code: string
+    message: string
   }
 
   type RegisterTenantResponse = {
