@@ -5,11 +5,9 @@ deployment
 jest.setup.ts
 jest.config.js
 lint-staged.config.js
-.open-next
 commitlint.config.js
 prettier.config.js
-.next/
-out/
+.next
 .eslintrc.js
 .prettierignore
 next.config.js

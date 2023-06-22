@@ -1,11 +1,13 @@
 interface PAGE_ROUTES {
   PRICING_PLANS: string
   NEW_CUSTOMER: string
+  CONFIRM_ACCOUNT: string
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
   PRICING_PLANS: 'pricing-plans',
   NEW_CUSTOMER: 'new-customer',
+  CONFIRM_ACCOUNT: 'confirm-account',
 }
 
 interface API_ROUTES {
@@ -37,15 +39,15 @@ interface AMPLIFY {
   USER_WEB_CLIENT_ID: string
 }
 const DEV_AMPLIFY: AMPLIFY = {
-  USER_POOL_ID: 'eu-west-2_H6F7KWKl8',
-  IDENTITY_POOL_ID: 'eu-west-2:c66b9ccc-9141-4ac7-a274-be74a27940bc',
-  USER_WEB_CLIENT_ID: '712hh8ocdqmu3g4se27deg555i',
+  USER_POOL_ID: 'eu-west-2_QUR6B90gv',
+  IDENTITY_POOL_ID: 'eu-west-2:266b697c-02c2-4b62-ac8e-4ffd5187ed97',
+  USER_WEB_CLIENT_ID: '3tn1mhcdeiniljujjcssk3fvig',
 }
 
 const PROD_AMPLIFY: AMPLIFY = {
-  USER_POOL_ID: 'eu-west-2_5wmsSeZyn',
-  IDENTITY_POOL_ID: 'eu-west-2:f0b5b5a5-c8b9-4f3c-b177-fe05f43564d3',
-  USER_WEB_CLIENT_ID: '2pmgfik1pahc2uusejs3fe8kru',
+  USER_POOL_ID: 'eu-west-2_uyYUg5HDK',
+  IDENTITY_POOL_ID: 'eu-west-2:3151f8bc-a020-45c5-bfa3-28f9907499b2',
+  USER_WEB_CLIENT_ID: 'mgifkajpt6qct91shordphu0r',
 }
 
 interface CONFIG {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import {colors, spacing} from '@/styles'
+import {colors, mediaQueries, spacing} from '@/styles'
 
 export const Container = styled.div`
   width: 100%;
@@ -9,6 +9,15 @@ export const Container = styled.div`
   height: 70px;
   display: flex;
   align-items: center;
+  margin-bottom: ${spacing.space4x};
+
+  @media (${mediaQueries.l}) {
+    margin-bottom: ${spacing.space8x};
+  }
+
+  @media (${mediaQueries.xl}) {
+    margin-bottom: ${spacing.space12x};
+  }
 `
 
 export const Circle = styled.div`

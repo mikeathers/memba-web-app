@@ -29,7 +29,14 @@ export interface TextProps extends StyledTextProps {
     | 'footnote'
     | 'label'
     | 'tab'
-  children: React.ReactElement | React.ReactElement[] | string[] | string | undefined
+  children:
+    | React.ReactElement
+    | React.ReactElement[]
+    | React.ReactNode
+    | React.ReactNode[]
+    | string[]
+    | string
+    | undefined
 }
 
 export const Text: React.FC<TextProps> = (props) => {

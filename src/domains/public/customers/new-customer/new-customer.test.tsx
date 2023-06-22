@@ -2,7 +2,7 @@ import {mocked} from 'jest-mock'
 import {useRouter} from 'next/navigation'
 import {fireEvent, render, waitFor} from '@testing-library/react'
 
-import {useCustomerStore} from '@/domains/customers/customers.store'
+import {useCustomerStore} from '@/domains/public/customers/customers.store'
 import {NewCustomer} from '@/domains'
 import {mockNewCustomerContent} from '@/test-utils'
 import {CONFIG} from '@/config'

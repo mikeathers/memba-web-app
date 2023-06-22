@@ -52,7 +52,8 @@ const Card: React.FC<YourPlanCardProps> = ({tier, pricing, change}) => {
 export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
   const {content} = props
   const {tier} = useCustomerStore()
-  const {run, data, error, isLoading} = useSafeAsync()
+  const router = useRouter()
+  const {run, data, error, isLoading, isSuccess} = useSafeAsync()
   const [fetchError, setFetchError] = useState<string>('')
   const getPricing = () => {
     if (tier == 'Free') return content.freePricing
@@ -63,6 +64,10 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
 
   useEffect(() => {
     console.log({error, data, isLoading})
+
+    if (isSuccess) {
+      router.push(CONFIG.PAGE_ROUTES.CONFIRM_ACCOUNT)
+    }
 
     if (axios.isAxiosError(error)) {
       if (isHttpBadResponse(error.response?.data)) {
@@ -78,17 +83,11 @@ export const NewCustomer: React.FC<NewCustomersComponentProps> = (props) => {
 
     await run(
       createCustomerAccount({
-        name: companyName,
-        hello: '',
+        tenantName: companyName,
         tier,
         ...rest,
       }),
     )
-    // } catch (error) {
-    //   if (axios.isAxiosError(error) && isHttpBadResponse(error.response?.data)) {
-    //     console.log(error.response?.data.message)
-    //   }
-    // }
   }
 
   const formSchema = object({

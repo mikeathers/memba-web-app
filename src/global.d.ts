@@ -38,17 +38,17 @@ declare global {
       message: string
       result: {
         id: string
-        name: string
+        tenantName: string
         tier: string
         firstName: string
         lastName: string
         emailAddress: string
-        password: string
         addressLineOne: string
         addressLineTwo: string
         doorNumber: string
         townCity: string
         postCode: string
+        tenantUrl: string
       }
     }
   }
@@ -107,6 +107,15 @@ declare global {
     transactionalCosts: string
     getStarted: string
     findOutMore: string
+  }
+
+  type ConfirmAccountContent = {
+    heading: string
+    emailSentMessage: string
+    confirmationInstruction: string
+    didntGetConfirmationEmail: string
+    checkSpamFolder: string
+    sendAgain: string
   }
 }
 

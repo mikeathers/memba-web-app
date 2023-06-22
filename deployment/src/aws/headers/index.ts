@@ -8,7 +8,7 @@ import CONFIG from '../../config'
 import {ResponseCustomHeader} from 'aws-cdk-lib/aws-cloudfront/lib/response-headers-policy'
 
 export const getSecurityHeader = (scope: Stack): ResponseHeadersPolicy => {
-  const name = `${CONFIG.STACK_PREFIX}-NextJsSecurityHeadersResponseHeaderPolicy`
+  const name = `${CONFIG.STACK_PREFIX}SecurityHeadersResponseHeaderPolicy`
 
   const header: ResponseCustomHeader = {
     header: 'Content-Type',

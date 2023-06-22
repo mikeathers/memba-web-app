@@ -42,7 +42,7 @@ export class NextJsStack extends Stack {
     // Create Static Files (assets) S3 Bucket and Bucket Deployment
     ////////////////////////////////////////////////////////////////
     const staticFilesBucket = createBucket({
-      bucketName: `${CONFIG.STACK_PREFIX}StaticFiles-${stage}`,
+      bucketName: `${CONFIG.STACK_PREFIX}StaticFiles`,
       scope: this,
     })
 
@@ -52,7 +52,7 @@ export class NextJsStack extends Stack {
       scope: this,
       bucket: staticFilesBucket,
       filePath: `${basePath}/assets`,
-      deploymentName: `${CONFIG.STACK_PREFIX}StaticFilesBucketDeployment-${stage}`,
+      deploymentName: `${CONFIG.STACK_PREFIX}StaticFilesBucketDeployment`,
     })
 
     ////////////////////////////////////////////////////////////////
@@ -108,7 +108,7 @@ export class NextJsStack extends Stack {
       scope: this,
       url,
       hostedZone,
-      name: `${CONFIG.STACK_PREFIX}NextJsWebsiteCertificate-${stage}`,
+      name: `${CONFIG.STACK_PREFIX}Certificate`,
     })
 
     const serverCachePolicy = createCachePolicy(
@@ -171,7 +171,7 @@ export class NextJsStack extends Stack {
       hostedZone,
       url,
       distribution,
-      name: `${CONFIG.STACK_PREFIX}NextJsWebsiteARecord-${stage}`,
+      name: `${CONFIG.STACK_PREFIX}ARecord`,
     })
   }
 }

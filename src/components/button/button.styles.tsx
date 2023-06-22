@@ -38,7 +38,6 @@ const margins = css<StyledButtonProps>`
 
 export const StyledButton = styled.button<StyledButtonProps>`
   ${margins};
-  width: 100%;
   border-radius: ${borderRadius.rounded};
   background-color: ${colors.blues800};
   color: ${colors.neutrals000};
@@ -51,6 +50,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   ${({variant}) => {
     if (variant === 'primary') {
       return css`
+        width: 100%;
         background-color: ${colors.blues800};
         color: ${colors.neutrals000};
         border: none;
@@ -58,6 +58,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
     }
     if (variant === 'secondary') {
       return css`
+        width: 100%;
         background-color: ${colors.neutrals000};
         color: ${colors.blues800};
         border: 1px solid ${colors.blues800};

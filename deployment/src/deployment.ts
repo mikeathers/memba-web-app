@@ -8,7 +8,7 @@ import {NextJsStack} from './nextjs-stack'
 
 const app = new App()
 const stage = getStage(app)
-const stackName = `${CONFIG.STACK_PREFIX}AppDeploymentStack-${stage}`
+const stackName = `${CONFIG.STACK_PREFIX}DeploymentStack`
 
 const defaultConfig = {
   stage,

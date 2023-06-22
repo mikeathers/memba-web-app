@@ -19,5 +19,6 @@
     "strictPropertyInitialization": false,
     "typeRoots": ["./node_modules/@types"]
   },
-  "exclude": ["node_modules", "cdk.out", "./deployment"]
+  "include": ["src/**/*.ts", "src/**/*.js", "**/*.js", "**/*.ts", "src/**/*"],
+  "exclude": ["node_modules", "**/node_modules/*", "cdk.out"]
 }

@@ -1,10 +1,8 @@
 import styled from 'styled-components'
-import {borderRadius, colors, fontSizes, mediaQueries, spacing} from '@/styles'
 import type {HTMLProps} from 'react'
 
-export const Header = styled.p`
-  font-weight: 600;
-`
+import {borderRadius, colors, fontSizes, mediaQueries, spacing} from '@/styles'
+
 export const Container = styled.div`
   @media (${mediaQueries.s}) {
     width: 100%;

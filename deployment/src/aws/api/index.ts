@@ -1,9 +1,6 @@
 import {Construct} from 'constructs'
 import {EndpointType, LambdaIntegration, RestApi} from 'aws-cdk-lib/aws-apigateway'
 import {Function as CdkFunction} from 'aws-cdk-lib/aws-lambda'
-import {enableLogging} from '../logging'
-import {ManagedPolicy, Role, ServicePrincipal} from 'aws-cdk-lib/aws-iam'
-import {Stack} from 'aws-cdk-lib'
 
 interface CreateApiGatewayProps {
   scope: Construct
@@ -13,7 +10,6 @@ interface CreateApiGatewayProps {
 export const createApiGateway = (props: CreateApiGatewayProps) => {
   const {scope, id} = props
   return new RestApi(scope, `${id}-Api`, {
-    description: `APIGateway for ${id}`,
     binaryMediaTypes: ['*/*'],
     endpointTypes: [EndpointType.REGIONAL],
   })

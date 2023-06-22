@@ -29,26 +29,25 @@ export class DeploymentStack extends Stack {
     const responseHeadersPolicy = getSecurityHeader(this)
 
     const bucket = createBucket({
-      bucketName: `${CONFIG.STACK_PREFIX}WebsiteBucket-${stage}`,
+      bucketName: `${CONFIG.STACK_PREFIX}WebsiteBucket`,
       scope: this,
     })
 
     const accessIdentity = handleAccessIdentity({
       scope: this,
       bucket,
-      name: `${CONFIG.STACK_PREFIX}WebsiteCloudFrontOriginAccessIdentity-${stage}`,
+      name: `${CONFIG.STACK_PREFIX}CloudFrontOriginAccessIdentity`,
     })
 
     const certificate = createCertificate({
       scope: this,
       url,
       hostedZone,
-      name: `${CONFIG.STACK_PREFIX}WebsiteCertificate-${stage}`,
+      name: `${CONFIG.STACK_PREFIX}WebsiteCertificate`,
     })
 
     const rewriteFunction = getRewriteFunction({
       scope: this,
-      stage,
     })
 
     const distribution = createDistribution({
@@ -60,14 +59,14 @@ export class DeploymentStack extends Stack {
       securityHeadersPolicy: responseHeadersPolicy,
       functionAssociation: rewriteFunction,
       stage,
-      distributionName: `${CONFIG.STACK_PREFIX}WebsiteCloudfrontDistribution-${stage}`,
+      distributionName: `${CONFIG.STACK_PREFIX}CloudfrontDistribution`,
     })
 
     createBucketDeploymentWithDistribution({
       scope: this,
       bucket,
-      filePath: './out', //isProduction ? './frontend-build/prod' : './frontend-build/dev',
-      deploymentName: `${CONFIG.STACK_PREFIX}WebsiteBucketDeployment-${stage}`,
+      filePath: './out',
+      deploymentName: `${CONFIG.STACK_PREFIX}BucketDeployment`,
       distribution,
     })
 
@@ -76,7 +75,7 @@ export class DeploymentStack extends Stack {
       hostedZone,
       url,
       distribution,
-      name: `${CONFIG.STACK_PREFIX}WebsiteARecord-${stage}`,
+      name: `${CONFIG.STACK_PREFIX}WebsiteARecord`,
     })
   }
 }
