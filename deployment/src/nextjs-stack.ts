@@ -42,7 +42,7 @@ export class NextJsStack extends Stack {
     // Create Static Files (assets) S3 Bucket and Bucket Deployment
     ////////////////////////////////////////////////////////////////
     const staticFilesBucket = createBucket({
-      bucketName: `${CONFIG.STACK_PREFIX}StaticFiles`,
+      bucketName: `Memba${CONFIG.STACK_PREFIX}StaticFiles-${stage}`,
       scope: this,
     })
 
