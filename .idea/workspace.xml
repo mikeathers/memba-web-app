@@ -5,53 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e6cf639-c049-438c-ba34-fee79f975ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/(public)/confirm-account/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/confirm-account/confirm-account.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/confirm-account/confirm-account.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/confirm-account/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/formatting/formatting.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/interpolate/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/interpolate/interpolate.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/interpolate/interpolate.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.husky/pre-commit" beforeDir="false" afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/aws/api/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/api/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/aws/headers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/headers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/aws/helpers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/aws/helpers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/deployment-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/deployment-stack.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/deployment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/deployment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/nextjs-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/nextjs-stack.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lint-staged.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/lint-staged.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/(customers)/customer-login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/(customers)/customer-login/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/(customers)/new-customer/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/(customers)/new-customer/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(auth)/(customers)/pricing-plans/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/(customers)/pricing-plans/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/text.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/customers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/misc/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/customers.store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/customers.store.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/new-customer/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/new-customer/new-customer.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/new-customer/new-customer.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/new-customer/new-customer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/new-customer/new-customer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/pricing-plans.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/customers/pricing-plans/pricing-plans.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/image-mock.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-utils/__mocks__/image-mock.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-utils/__mocks__/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/formatting/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/formatting/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

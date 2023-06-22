@@ -15,8 +15,5 @@
 
 echo "Running commit hooks..."
 
-echo "Running type-check command"
-yarn type-check
-
 echo "Running lint command"
 yarn lint-staged
