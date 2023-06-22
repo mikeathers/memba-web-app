@@ -20,4 +20,4 @@ yarn cdk \
   --force \
   '--toolkit-stack-name "cdk-toolkit-master"' \
   --app "ts-node ./src/deployment.ts" \
-  deploy
+  deploy *-prod
