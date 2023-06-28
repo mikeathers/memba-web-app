@@ -1,4 +1,4 @@
-export const newCustomer: NewCustomerContent = {
+export const newTenant: NewTenantContent = {
   heading: 'Get started',
   yourPlan: 'Your plan',
   perMonth: '/pm',
@@ -6,6 +6,8 @@ export const newCustomer: NewCustomerContent = {
   basicPricing: '£30.00',
   premiumPricing: '£50.00',
   change: 'Change',
+  tenantAlreadyExistsError: 'A tenant with the details you have provided already exists.',
+  genericError: 'Something has gone wrong, please try again later or get in touch.',
   form: {
     companyName: 'Company name:',
     companyNamePlaceholder: 'Enter your company name',

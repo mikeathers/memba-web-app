@@ -1,23 +1,13 @@
 import './globals.css'
 
-import {Auth} from '@aws-amplify/auth'
 import {Poppins} from 'next/font/google'
 import {App} from '@/app/app'
 import StyledComponentsRegistry from '@/app/registry'
-import {CONFIG} from '@/config'
 
 const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
   weight: ['400', '500', '600'],
-})
-
-Auth.configure({
-  mandatorySignIn: false,
-  region: 'eu-west-2',
-  userPoolId: CONFIG.AMPLIFY.USER_POOL_ID,
-  identityPoolId: CONFIG.AMPLIFY.IDENTITY_POOL_ID,
-  userPoolWebClientId: CONFIG.AMPLIFY.USER_WEB_CLIENT_ID,
 })
 
 export const metadata = {
@@ -28,7 +18,7 @@ export const metadata = {
 export default function RootLayout({children}: {children: JSX.Element}) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body className={poppins.className}>
+      <body className={poppins.className} suppressHydrationWarning={true}>
         <StyledComponentsRegistry>
           <App>{children}</App>
         </StyledComponentsRegistry>

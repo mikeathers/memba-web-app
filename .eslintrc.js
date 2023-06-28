@@ -58,12 +58,16 @@ module.exports = {
         'import/no-named-as-default-member': 'off',
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unsafe-return': 'warn',
+        'react-hooks/exhaustive-deps': 'off',
       },
     },
     {
       files: ['**/*.{test,tests,stories,styles}.{ts,tsx}'],
       rules: {
         '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/unbound-method': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
       },
     },
     {

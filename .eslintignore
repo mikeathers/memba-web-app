@@ -1,6 +1,6 @@
 node_modules
 public
-src/test-utils
+src/test-support
 deployment
 jest.setup.ts
 jest.config.js
@@ -11,3 +11,4 @@ prettier.config.js
 .eslintrc.js
 .prettierignore
 next.config.js
+__mocks__

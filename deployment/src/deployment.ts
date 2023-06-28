@@ -44,8 +44,6 @@ const config = {
   },
 }
 
-console.log('CONFIG: ', config[stage])
-
 new NextJsStack(app, stackName, {
   ...defaultConfig,
   ...config[stage],

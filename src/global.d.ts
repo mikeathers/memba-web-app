@@ -1,6 +1,15 @@
 import type {FormikErrors, FormikValues} from 'formik'
 
 declare global {
+  type AuthUser = {
+    emailAddress: string
+    familyName: string
+    givenName: string
+    isTenantAdmin?: boolean
+    isMembaAdmin?: boolean
+    tenantId?: string
+  }
+
   interface NewCustomerFormDetails extends FormikValues {
     emailAddress?: string
     password?: string
@@ -32,6 +41,18 @@ declare global {
     message: string
   }
 
+  type CognitoUserAttributes = {
+    email: string
+    family_name: string
+    given_name: string
+    picture?: string
+    phone_number?: string
+    address?: string
+    'custom:isTenantAdmin'?: boolean
+    'custom:isMembaAdmin'?: boolean
+    'custom:tenantId'?: string
+  }
+
   type RegisterTenantResponse = {
     statusCode: number
     body: {
@@ -53,12 +74,14 @@ declare global {
     }
   }
 
-  /**** Content *****/
+  /******************* ********************/
+  /*************** Content ***************/
+  /******************* ********************/
 
   type MiscContent = {
     allRightsReserved: string
   }
-  type NewCustomerContent = {
+  type NewTenantContent = {
     heading: string
     yourPlan: string
     perMonth: string
@@ -66,6 +89,8 @@ declare global {
     basicPricing: string
     premiumPricing: string
     change: string
+    tenantAlreadyExistsError: string
+    genericError: strin
     form: {
       companyName: string
       companyNamePlaceholder: string

@@ -1,5 +1,6 @@
+import {Loading as LoadingComponent} from '@/components'
 const Loading = () => {
-  return <div>LOADING</div>
+  return <LoadingComponent />
 }
 
 export default Loading

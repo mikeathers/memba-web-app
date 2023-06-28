@@ -1,13 +1,22 @@
+export const TEMP_LOCAL_STORAGE_PWD_KEY = 'TEMP_LOCAL_STORAGE_PWD_KEY'
+export const IDENTITY_LOCALSTORAGE_KEY = 'IDENTITY_LOCALSTORAGE_KEY'
+export const JWT_LOCALSTORAGE_KEY = 'JWT_LOCALSTORAGE_KEY'
 interface PAGE_ROUTES {
   PRICING_PLANS: string
   NEW_CUSTOMER: string
   CONFIRM_ACCOUNT: string
+  SIGN_IN: string
+
+  APP_HOME: string
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
   PRICING_PLANS: 'pricing-plans',
   NEW_CUSTOMER: 'new-customer',
   CONFIRM_ACCOUNT: 'confirm-account',
+  SIGN_IN: 'sign-in',
+
+  APP_HOME: 'app/home',
 }
 
 interface API_ROUTES {
@@ -39,15 +48,15 @@ interface AMPLIFY {
   USER_WEB_CLIENT_ID: string
 }
 const DEV_AMPLIFY: AMPLIFY = {
-  USER_POOL_ID: 'eu-west-2_QUR6B90gv',
-  IDENTITY_POOL_ID: 'eu-west-2:266b697c-02c2-4b62-ac8e-4ffd5187ed97',
-  USER_WEB_CLIENT_ID: '3tn1mhcdeiniljujjcssk3fvig',
+  USER_POOL_ID: 'eu-west-2_O3gVXNPRu',
+  IDENTITY_POOL_ID: 'eu-west-2:84901c60-5169-4948-8f0e-d55e87bc127e',
+  USER_WEB_CLIENT_ID: '1s5g5auqd5lv6h9ucut5d7g05m',
 }
 
 const PROD_AMPLIFY: AMPLIFY = {
-  USER_POOL_ID: 'eu-west-2_uyYUg5HDK',
-  IDENTITY_POOL_ID: 'eu-west-2:3151f8bc-a020-45c5-bfa3-28f9907499b2',
-  USER_WEB_CLIENT_ID: 'mgifkajpt6qct91shordphu0r',
+  USER_POOL_ID: 'eu-west-2_eWg0ysJay',
+  IDENTITY_POOL_ID: 'eu-west-2:1ee6f75f-c0d0-461a-bbf2-d2e203343f22',
+  USER_WEB_CLIENT_ID: '69ffemp6aklgncfv39l44beupr',
 }
 
 interface CONFIG {
@@ -71,8 +80,11 @@ export const PROD_CONFIG: CONFIG = {
   ENDPOINTS,
 }
 
+export enum TIERS {
+  FREE = 'Free',
+  BASIC = 'Basic',
+  PREMIUM = 'Premium',
+}
+
 export const CONFIG =
   process.env.NEXT_PUBLIC_IS_PRODUCTION === 'true' ? PROD_CONFIG : DEV_CONFIG
-
-console.log({CONFIG})
-console.log('isProduction: ', process.env.NEXT_PUBLIC_IS_PRODUCTION)

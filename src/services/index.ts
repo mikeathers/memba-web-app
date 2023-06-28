@@ -1,1 +1,1 @@
-export * from './customers'
+export * from './tenants'
