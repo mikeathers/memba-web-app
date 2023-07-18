@@ -19,7 +19,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = (props) => {
 
   const handleGetStartedClick = (tier: string) => {
     setTier(tier)
-    router.push(CONFIG.PAGE_ROUTES.NEW_CUSTOMER)
+    router.push(CONFIG.PAGE_ROUTES.NEW_TENANT)
   }
 
   return (

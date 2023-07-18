@@ -20,7 +20,6 @@ export const CompleteSignUp: React.FC = () => {
   const emailAddress = searchParams.get('emailAddress')
 
   const handleSubmitOnLoad = async () => {
-    console.log({emailAddress, code})
     if (emailAddress && code) {
       await run(completeRegistration({emailAddress, code}))
     }
@@ -31,22 +30,20 @@ export const CompleteSignUp: React.FC = () => {
       setSignUserInSubmitted(true)
       if (emailAddress) {
         const password = getItemFromLocalStorage(TEMP_LOCAL_STORAGE_PWD_KEY)
-        console.log({password})
         if (password) {
           const user = await run(signUserIn({emailAddress, password}))
-          console.log({user})
           if (user) {
-            // router.push(PAGE_ROUTES.APP_HOME)
+            router.push(PAGE_ROUTES.APP_HOME)
           } else {
-            // router.push(PAGE_ROUTES.SIGN_IN)
+            router.push(PAGE_ROUTES.SIGN_IN)
           }
         } else {
           setLocalLoading(false)
-          // router.push(PAGE_ROUTES.SIGN_IN)
+          router.push(PAGE_ROUTES.SIGN_IN)
         }
       }
-    } catch (error) {
-      console.log({error})
+    } catch {
+      router.push(PAGE_ROUTES.SIGN_IN)
     }
   }
 
@@ -62,9 +59,8 @@ export const CompleteSignUp: React.FC = () => {
 
   useEffect(() => {
     if (error) {
-      console.log({error})
       setLocalLoading(false)
-      //router.push(CONFIG.PAGE_ROUTES.SIGN_IN)
+      router.push(CONFIG.PAGE_ROUTES.SIGN_IN)
     }
   }, [error])
 

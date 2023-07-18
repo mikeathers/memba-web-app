@@ -43,7 +43,7 @@ describe('Pricing Plans', () => {
 
     fireEvent.click(getAllByText('Get started')[0])
 
-    expect(mockPush).toHaveBeenCalledWith(CONFIG.PAGE_ROUTES.NEW_CUSTOMER)
+    expect(mockPush).toHaveBeenCalledWith(CONFIG.PAGE_ROUTES.NEW_TENANT)
   })
 
   it('should call setTier when clicking get started', () => {

@@ -141,37 +141,32 @@ export class NextJsStack extends Stack {
       cachedMethods: CachedMethods.CACHE_GET_HEAD_OPTIONS,
       originRequestPolicy,
     })
-    const distribution = createOpenNextDistribution(
-      this,
-      certificate,
-      serverCachePolicy,
-      basePath,
-      {
-        domainName: url,
-        hostedZoneProps: {
-          hostedZoneId: hostedZone.hostedZoneId,
-          zoneName: hostedZone.zoneName,
-        },
-        // webAclArn: props.webAclArn,
-        certificateArn: certificate.certificateArn,
-        serverFunctionOrigin,
-        imageFunctionOrigin,
-        s3BucketOrigin,
-        cachePolicyProps: {},
-        additionalBehaviours: {},
-        serverFnBehaviour,
-        imageFnBehaviour,
-        staticFileBehaviour,
-        originRequestPolicy,
-      },
-    )
 
-    createARecordForDistribution({
-      scope: this,
-      hostedZone,
-      url,
-      distribution,
-      name: `${CONFIG.STACK_PREFIX}ARecord`,
+    createOpenNextDistribution(this, certificate, serverCachePolicy, basePath, {
+      domainName: url,
+      hostedZoneProps: {
+        hostedZoneId: hostedZone.hostedZoneId,
+        zoneName: hostedZone.zoneName,
+      },
+      // webAclArn: props.webAclArn,
+      certificateArn: certificate.certificateArn,
+      serverFunctionOrigin,
+      imageFunctionOrigin,
+      s3BucketOrigin,
+      cachePolicyProps: {},
+      additionalBehaviours: {},
+      serverFnBehaviour,
+      imageFnBehaviour,
+      staticFileBehaviour,
+      originRequestPolicy,
     })
+
+    // createARecordForDistribution({
+    //   scope: this,
+    //   hostedZone,
+    //   url,
+    //   distribution,
+    //   name: `${CONFIG.STACK_PREFIX}ARecord`,
+    // })
   }
 }

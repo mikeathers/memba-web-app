@@ -169,7 +169,7 @@ export const createOpenNextDistribution = (
   return new Distribution(scope, 'Distribution', {
     defaultRootObject: '',
     certificate: certificate,
-    domainNames: [props.domainName, `*.${props.domainName}`],
+    domainNames: [`*.${props.domainName}`],
     defaultBehavior: {
       origin: new OriginGroup({
         primaryOrigin: props.serverFunctionOrigin,

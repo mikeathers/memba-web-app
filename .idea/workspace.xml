@@ -5,69 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e6cf639-c049-438c-ba34-fee79f975ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/__mocks__/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__mocks__/svgMock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(public)/complete-sign-up/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/(public)/new-tenant/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/auth.helpers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/auth.reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/auth.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/auth.types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/complete-sign-up/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test-support/__mocks__/cognito/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test-support/__mocks__/locales/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test-support/__mocks__/state/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test-support/resolver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/refresh-jwt/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/(public)/sign-in/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app/home/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/page.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/text-link/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/text-link/text-link.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/text-link/text-link.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/app/home/home.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/app/home/home.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/app/home/home.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/app/home/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/app/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/with-authenticated-redirect/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/with-authenticated-redirect/with-authenticated-redirect.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/with-authenticated-redirect/with-authenticated-redirect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/with-unauthentication-redirect/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/with-unauthentication-redirect/with-unauthenticated-redirect.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/with-unauthentication-redirect/with-unauthenticated-redirect.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/src/deployment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/src/deployment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(public)/(customers)/customer-login/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(public)/(customers)/new-customer/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/(public)/(customers)/pricing-plans/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/pricing-plans/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/customers.store.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/stores.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/new-customer/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/new-tenant/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/new-customer/new-customer.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/new-tenant/new-tenant.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/new-customer/new-customer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/new-tenant/new-tenant.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/new-customer/new-customer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/new-tenant/new-tenant.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/pricing-plans.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/customers/pricing-plans/pricing-plans.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domains/public/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/customers/create-account.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/customers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/auth-state.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/cognito-user.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/image-mock.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-support/__mocks__/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/locales/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/__mocks__/style-mock.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test-utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-support/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/storage/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/storage/storage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +65,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/__mocks__&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -112,10 +83,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/__mocks__" />
       <recent name="$PROJECT_DIR$/src/test-support/__mocks__" />
       <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -126,7 +97,19 @@
       <recent name="$PROJECT_DIR$/src/content" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Complete sign up.should push the user to the sign in page route if an error occurs">
+  <component name="RunManager" selected="Jest.Sign in">
+    <configuration name="App Home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/domains/app/home/home.test.tsx" />
+      <test-names>
+        <test-name value="App Home" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Complete sign up" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -136,19 +119,6 @@
       <test-file value="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.test.tsx" />
       <test-names>
         <test-name value="Complete sign up" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Complete sign up.should push the user to the app home page route if the user is signed in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.test.tsx" />
-      <test-names>
-        <test-name value="Complete sign up" />
-        <test-name value="should push the user to the app home page route if the user is signed in" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -165,19 +135,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Complete sign up.should push the user to the sign in page route if the user is not able to be signed in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.test.tsx" />
-      <test-names>
-        <test-name value="Complete sign up" />
-        <test-name value="should push the user to the sign in page route if the user is not able to be signed in" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Complete sign up.should push the user to the sign in page route if the users password is not found in local storage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -191,20 +148,32 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Sign in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.test.tsx" />
+      <test-names>
+        <test-name value="Sign in" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Jest.App Home" />
+      <item itemvalue="Jest.Sign in" />
       <item itemvalue="Jest.Complete sign up" />
       <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if an error occurs" />
-      <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if the user is not able to be signed in" />
       <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if the users password is not found in local storage" />
-      <item itemvalue="Jest.Complete sign up.should push the user to the app home page route if the user is signed in" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Sign in" />
+        <item itemvalue="Jest.App Home" />
         <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if an error occurs" />
         <item itemvalue="Jest.Complete sign up" />
         <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if the users password is not found in local storage" />
-        <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if the user is not able to be signed in" />
-        <item itemvalue="Jest.Complete sign up.should push the user to the app home page route if the user is signed in" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +192,10 @@
       <workItem from="1687756460264" duration="8601000" />
       <workItem from="1687842103218" duration="176000" />
       <workItem from="1687842320737" duration="9954000" />
-      <workItem from="1687975004509" duration="3289000" />
+      <workItem from="1687975004509" duration="13463000" />
+      <workItem from="1689252934282" duration="521000" />
+      <workItem from="1689656705856" duration="595000" />
+      <workItem from="1689659087872" duration="1475000" />
     </task>
     <servers />
   </component>
@@ -256,7 +228,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx</url>
-          <line>37</line>
+          <line>34</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>

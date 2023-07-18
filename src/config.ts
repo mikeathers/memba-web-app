@@ -3,7 +3,7 @@ export const IDENTITY_LOCALSTORAGE_KEY = 'IDENTITY_LOCALSTORAGE_KEY'
 export const JWT_LOCALSTORAGE_KEY = 'JWT_LOCALSTORAGE_KEY'
 interface PAGE_ROUTES {
   PRICING_PLANS: string
-  NEW_CUSTOMER: string
+  NEW_TENANT: string
   CONFIRM_ACCOUNT: string
   SIGN_IN: string
 
@@ -11,12 +11,12 @@ interface PAGE_ROUTES {
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
-  PRICING_PLANS: 'pricing-plans',
-  NEW_CUSTOMER: 'new-customer',
-  CONFIRM_ACCOUNT: 'confirm-account',
-  SIGN_IN: 'sign-in',
+  PRICING_PLANS: '/pricing-plans',
+  NEW_TENANT: '/new-tenant',
+  CONFIRM_ACCOUNT: '/confirm-account',
+  SIGN_IN: '/sign-in',
 
-  APP_HOME: 'app/home',
+  APP_HOME: '/app/home',
 }
 
 interface API_ROUTES {

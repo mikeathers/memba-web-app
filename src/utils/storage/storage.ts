@@ -6,7 +6,8 @@ export const setItemInLocalStorage = <T>(key: string, value: T) => {
 
 export const getItemFromLocalStorage = (key: string) => {
   if (window.localStorage) {
-    return localStorage.getItem(key)
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    return JSON.parse(localStorage.getItem(key) ?? '')
   }
 }
 
