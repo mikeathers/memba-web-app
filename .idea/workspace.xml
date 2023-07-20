@@ -5,40 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e6cf639-c049-438c-ba34-fee79f975ce4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/(public)/sign-in/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/app/home/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/page.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text-link/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text-link/text-link.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/text-link/text-link.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/app/home/home.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/app/home/home.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/app/home/home.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/app/home/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/app/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-authenticated-redirect/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-authenticated-redirect/with-authenticated-redirect.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-authenticated-redirect/with-authenticated-redirect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-unauthentication-redirect/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-unauthentication-redirect/with-unauthenticated-redirect.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hoc/with-unauthentication-redirect/with-unauthenticated-redirect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/storage/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/storage/storage.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +162,8 @@
       <workItem from="1687975004509" duration="13463000" />
       <workItem from="1689252934282" duration="521000" />
       <workItem from="1689656705856" duration="595000" />
-      <workItem from="1689659087872" duration="1475000" />
+      <workItem from="1689659087872" duration="2317000" />
+      <workItem from="1689702422656" duration="113000" />
     </task>
     <servers />
   </component>
