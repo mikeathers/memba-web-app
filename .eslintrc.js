@@ -59,6 +59,14 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         '@typescript-eslint/no-unsafe-return': 'warn',
         'react-hooks/exhaustive-deps': 'off',
+        '@typescript-eslint/no-floating-promises': 'off',
+        'no-useless-catch': 'off',
+        '@typescript-eslint/no-misused-promises': [
+          'error',
+          {
+            checksVoidReturn: false,
+          },
+        ],
       },
     },
     {

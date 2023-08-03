@@ -5,7 +5,117 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e6cf639-c049-438c-ba34-fee79f975ce4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app-pages/confirm-account/confirm-account.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/confirm-account/confirm-account.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/home/home.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/login/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/login/login.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/login/login.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/login/login.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/signup/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/signup/signup.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/signup/signup.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/app.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/home/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/signup/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/center-box/center-box.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/center-box/center-box.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/center-box/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/toasts/error/error.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/toasts/error/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/toasts/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/toasts/success/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/toasts/success/success.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/toasts/toasts.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-component-visible/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-component-visible/use-component-visible.hook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-tenant/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-tenant/use-tenant.hook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/tenants/create-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/tenants/get-app.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/tenants/get-tenant-account.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/tenants/get-user-account.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/axios/axios-tenants-instance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/axios/axios-users-instance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/axios/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/env/.env.development" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/env/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/complete-sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/complete-sign-up/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/confirm-account/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/confirm-account/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/new-tenant/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/pricing-plans/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/sign-in/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app/home/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/button/button.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/button.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading-spinner/loading-spinner.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading-spinner/loading-spinner.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/loading.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loading/loading.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/svg-icon/svg-icon.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/svg-icon/svg-icon.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text/text.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text/text.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/unauthenticated-wrapper/unauthenticated-wrapper.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.context.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/app/home/home.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/app/home/home.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/home.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/app/home/home.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/app/home/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/app/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/complete-sign-up/complete-sign-up.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.styles.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/complete-sign-up/complete-sign-up.styles.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/complete-sign-up/complete-sign-up.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/complete-sign-up/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/complete-sign-up/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/confirm-account/confirm-account.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/confirm-account/confirm-account.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/confirm-account/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/confirm-account/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/new-tenant/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/new-tenant/new-tenant.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/new-tenant/new-tenant.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/new-tenant/new-tenant.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/pricing-plans/pricing-plans.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/sign-in/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.component.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.styles.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/sign-in/sign-in.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domains/public/stores.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/create-tenant.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test-support/__mocks__/locales/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-support/__mocks__/locales/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test-support/__mocks__/state/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test-support/__mocks__/state/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/refresh-jwt/refresh-jwt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/storage/storage.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/storage/storage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/type-guarding/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/type-guarding/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +142,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/src/app-pages&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -50,21 +160,21 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app-pages" />
+      <recent name="$PROJECT_DIR$/src/services/tenants" />
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/app/profile" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/__mocks__" />
-      <recent name="$PROJECT_DIR$/src/test-support/__mocks__" />
-      <recent name="$PROJECT_DIR$/src/utils" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
+      <recent name="$PROJECT_DIR$/src/app/app" />
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/domains/public" />
       <recent name="$PROJECT_DIR$/src/app/(public)" />
-      <recent name="$PROJECT_DIR$/src/utils/interpolate" />
-      <recent name="$PROJECT_DIR$/src/content" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Sign in">
+  <component name="RunManager" selected="Jest.AuthContext">
     <configuration name="App Home" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -74,6 +184,18 @@
       <test-file value="$PROJECT_DIR$/src/domains/app/home/home.test.tsx" />
       <test-names>
         <test-name value="App Home" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AuthContext" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/context/auth/auth.test.tsx" />
+      <test-names>
+        <test-name value="AuthContext" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -102,19 +224,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Complete sign up.should push the user to the sign in page route if the users password is not found in local storage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/domains/public/complete-sign-up/complete-sign-up.test.tsx" />
-      <test-names>
-        <test-name value="Complete sign up" />
-        <test-name value="should push the user to the sign in page route if the users password is not found in local storage" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Sign in" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -128,19 +237,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Jest.AuthContext" />
       <item itemvalue="Jest.App Home" />
-      <item itemvalue="Jest.Sign in" />
       <item itemvalue="Jest.Complete sign up" />
       <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if an error occurs" />
-      <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if the users password is not found in local storage" />
+      <item itemvalue="Jest.Sign in" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.AuthContext" />
         <item itemvalue="Jest.Sign in" />
         <item itemvalue="Jest.App Home" />
         <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if an error occurs" />
         <item itemvalue="Jest.Complete sign up" />
-        <item itemvalue="Jest.Complete sign up.should push the user to the sign in page route if the users password is not found in local storage" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +273,16 @@
       <workItem from="1689656705856" duration="595000" />
       <workItem from="1689659087872" duration="2317000" />
       <workItem from="1689702422656" duration="113000" />
+      <workItem from="1689852355204" duration="683000" />
+      <workItem from="1690312345706" duration="747000" />
+      <workItem from="1690353142303" duration="3448000" />
+      <workItem from="1690525831734" duration="283000" />
+      <workItem from="1690526121837" duration="161000" />
+      <workItem from="1690526290720" duration="9443000" />
+      <workItem from="1690876403900" duration="3957000" />
+      <workItem from="1690960419220" duration="2201000" />
+      <workItem from="1690962681530" duration="2639000" />
+      <workItem from="1690998739030" duration="9878000" />
     </task>
     <servers />
   </component>

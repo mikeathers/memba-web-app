@@ -19,3 +19,13 @@ button,
 input {
     font-family: inherit;
 }
+
+.toast-position {
+    bottom: 50px;
+    left: 100px;
+}
+
+:root {
+    --toastify-toast-min-height: 100px;
+    --toastify-toast-width: 420px;
+}

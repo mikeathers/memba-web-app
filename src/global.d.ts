@@ -10,12 +10,66 @@ declare global {
     tenantId?: string
   }
 
+  type Membership = {
+    name: string
+    price: number
+  }
+
+  type Tenant = {
+    id: string
+    admins: string[]
+    apps: MembaApp[]
+  }
+
+  type MembaUser = {
+    authenticatedUserId: string
+    emailAddress: string
+    firstName: string
+    id: string
+    isTenantAdmin: boolean
+    lastName: string
+    tenantId: string
+    tenant: Tenant
+  }
+
+  export type Membership = {
+    name: string
+    price: number
+  }
+
+  export type MembaApp = {
+    name: string
+    memberships: Membership[]
+    id: string
+    url: string
+    tier: string
+    type: 'gym-management'
+    tenantId: string
+    groupName: string
+  }
+  interface SignupFormDetails extends FormikValues {
+    emailAddress: string
+    password: string
+    fullName: string
+  }
+
+  type ForgotPasswordFormDetails = Pick<SignupFormDetails, 'emailAddress'>
+  type ResetPasswordFormDetails = Pick<SignupFormDetails, 'password'>
+
+  interface LoginFormDetails extends FormikValues {
+    emailAddress: string
+    password: string
+  }
+
   interface NewCustomerFormDetails extends FormikValues {
     emailAddress?: string
     password?: string
-    companyName?: string
     firstName?: string
     lastName?: string
+  }
+
+  interface GetTenantUserApiResult {
+    result: MembaUser
   }
 
   type FormikError =
@@ -81,64 +135,63 @@ declare global {
   type MiscContent = {
     allRightsReserved: string
   }
-  type NewTenantContent = {
+
+  type HomeContent = {
     heading: string
-    yourPlan: string
-    perMonth: string
-    freePricing: string
-    basicPricing: string
-    premiumPricing: string
-    change: string
-    tenantAlreadyExistsError: string
-    genericError: strin
+  }
+
+  type SignUpContent = {
+    heading: string
+    termsOfService: string
+    login: string
+    userAlreadyExistsError: string
+    fullNameRequireError: string
+    genericError: string
     form: {
-      companyName: string
-      companyNamePlaceholder: string
-      firstName: string
-      firstNamePlaceholder: string
-      lastName: string
-      lastNamePlaceholder: string
+      fullName: string
+      fullNamePlaceholder: string
       email: string
       emailPlaceholder: string
       password: string
       passwordPlaceholder: string
-      createAccount: string
+      signUpCta: string
       validation: {
         passwordValidationMessage: string
         passwordLengthMessage: string
-        companyName: string
         emailAddress: string
         emailAddressFormat: string
-        firstName: string
-        lastName: string
+        fullName: string
         password: string
       }
     }
   }
-  type PricingPlansContent = {
+
+  type LoginContent = {
     heading: string
-    freeTierTitleText: string
-    freeTierTitleNumber: string
-    freeTierPricePerMonth: string
-    freeTierNumberOfCustomer: string
-    basicTierTitleText: string
-    basicTierTitleNumber: string
-    basicTierPricePerMonth: string
-    basicTierNumberOfCustomer: string
-    premiumTierTitleText: string
-    premiumTierTitleNumber: string
-    premiumTierPricePerMonth: string
-    premiumTierNumberOfCustomer: string
-    transactionalCosts: string
-    getStarted: string
-    findOutMore: string
+    signUp: string
+    cantLogin: string
+    genericError: string
+    userNotFoundError: string
+    incorrectUserNameOrPassword: string
+    form: {
+      email: string
+      emailPlaceholder: string
+      password: string
+      passwordPlaceholder: string
+      loginCta: string
+      validation: {
+        emailAddress: string
+        emailAddressFormat: string
+        password: string
+      }
+    }
   }
 
   type ConfirmAccountContent = {
     heading: string
     emailSentMessage: string
     confirmationInstruction: string
-    didntGetConfirmationEmail: string
+    resendConfirmationEmail: string
     checkSpamFolder: string
     sendAgain: string
   }

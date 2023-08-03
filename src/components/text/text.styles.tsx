@@ -116,7 +116,7 @@ export const H4 = styled.h4<StyledTextProps>`
 
 export const Body = styled(BaseText)`
   font-weight: ${fontWeights.regular};
-  font-size: ${fontSizes.s};
+  font-size: ${fontSizes.xs};
   line-height: ${lineHeights.medium};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
 `
@@ -127,7 +127,7 @@ export const BodyBold = styled(Body)`
 
 export const Caption = styled(BaseText)`
   font-weight: ${fontWeights.regular};
-  font-size: ${fontSizes.xxs};
+  font-size: ${fontSizes.xs};
   line-height: ${lineHeights.small};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
 `
@@ -140,7 +140,7 @@ export const FootNote = styled(BaseText)`
 
 export const Label = styled(BaseText)`
   font-weight: ${fontWeights.regular};
-  font-size: ${fontSizes.s};
+  font-size: ${fontSizes.xs};
   line-height: ${lineHeights.medium};
   color: ${({color}) => (color ? colors[color] : colors.greys100)};
 `

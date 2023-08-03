@@ -41,7 +41,7 @@ export interface SvgIconProps {
   name: keyof IconNames
   color?: keyof Colors
   size?: number
-  style?: string
+  style?: any
   viewBoxHeight?: number
   viewBoxWidth?: number
   viewBoxY?: number
@@ -86,7 +86,7 @@ export const icons = {
 export const SvgIcon: React.FC<SvgIconProps> = (props) => {
   const {name, size, color, style, viewBoxHeight, viewBoxWidth, viewBoxY, noFill} = props
 
-  const Icon = icons[name]
+  const Icon = icons[props.name]
 
   if (!Icon) return null
 

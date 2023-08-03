@@ -26,7 +26,7 @@ export const colors: Colors = {
   greens100: '#E5FFE3',
   greens800: '#283631',
   blues100: '#D9DFEA',
-  blues500: '#8ECFFF',
+  blues500: '#8EB0FF',
   blues800: '#5363F4',
   greys100: '#202C49',
   greys200: '#CCCED1',

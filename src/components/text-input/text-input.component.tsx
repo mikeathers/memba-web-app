@@ -2,10 +2,17 @@
 import type React from 'react'
 
 import type {Spacing} from '@/styles'
-import {spacingTokens} from '@/styles'
+import {colorTokens, iconTokens, spacingTokens} from '@/styles'
 
 import {Text} from '../text'
-import {Container, StyledTextInput} from './text-input.styles'
+import {
+  Container,
+  RightIconWrapper,
+  StyledTextInput,
+  TextInputWrapper,
+} from './text-input.styles'
+import {SvgIcon} from '../svg-icon'
+import {useState} from 'react'
 
 export interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   $marginBottomX?: keyof Spacing
@@ -18,14 +25,34 @@ export interface TextInputProps extends React.InputHTMLAttributes<HTMLInputEleme
 
 export const TextInput: React.FC<TextInputProps> = (props) => {
   const {label, ...rest} = props
+  const [showPassword, setShowPassword] = useState<boolean>(false)
+
+  const handleType = () => {
+    console.log()
+    if (props.type !== 'password') return props.type
+    else if (props.type === 'password' && showPassword) return 'text'
+    else return 'password'
+  }
+
   return (
     <Container>
       {label && (
-        <Text type={'label'} $marginBottomX={spacingTokens.space1x}>
+        <Text type={'label'} $marginBottomX={spacingTokens.spaceHalfx}>
           {label}
         </Text>
       )}
-      <StyledTextInput {...rest} />
+      <TextInputWrapper>
+        <StyledTextInput {...rest} type={handleType()} />
+        {props.type === 'password' && (
+          <RightIconWrapper onClick={() => setShowPassword(!showPassword)}>
+            <SvgIcon
+              name={showPassword ? iconTokens.visible : iconTokens.hidden}
+              color={colorTokens.neutrals500}
+              size={16}
+            />
+          </RightIconWrapper>
+        )}
+      </TextInputWrapper>
     </Container>
   )
 }

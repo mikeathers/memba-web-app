@@ -14,6 +14,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   $marginLeftX?: keyof Spacing
   $marginRightX?: keyof Spacing
   isLoading?: boolean
+  isDisabled?: boolean
 }
 
 export const Button: React.FC<ButtonProps> = (props) => {

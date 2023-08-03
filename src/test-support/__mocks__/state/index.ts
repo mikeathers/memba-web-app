@@ -39,7 +39,6 @@ const useAuthMockState: AuthContextValue = {
   addUserToState: mockAddUserToState,
   googleSignIn: mockGoogleSignIn,
   appleSignIn: mockAppleSignIn,
-  registerTenant: mockRegisterTenant,
 }
 
 const useSafeAsyncMockState = {
@@ -72,5 +71,4 @@ export const mockState = () => ({
   mockAddUserToState,
   mockGoogleSignIn,
   mockAppleSignIn,
-  mockRegisterTenant,
 })

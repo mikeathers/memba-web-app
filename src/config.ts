@@ -2,21 +2,33 @@ export const TEMP_LOCAL_STORAGE_PWD_KEY = 'TEMP_LOCAL_STORAGE_PWD_KEY'
 export const IDENTITY_LOCALSTORAGE_KEY = 'IDENTITY_LOCALSTORAGE_KEY'
 export const JWT_LOCALSTORAGE_KEY = 'JWT_LOCALSTORAGE_KEY'
 interface PAGE_ROUTES {
-  PRICING_PLANS: string
-  NEW_TENANT: string
+  HOME: string
+  SIGN_UP: string
   CONFIRM_ACCOUNT: string
-  SIGN_IN: string
+  LOGIN: string
+  FORGOT_PASSWORD: string
+  RESET_PASSWORD: string
+}
 
-  APP_HOME: string
+interface SITE_ROUTES {
+  ID: string
 }
 
 export const PAGE_ROUTES: PAGE_ROUTES = {
-  PRICING_PLANS: '/pricing-plans',
-  NEW_TENANT: '/new-tenant',
+  HOME: '/home',
+  SIGN_UP: '/signup',
   CONFIRM_ACCOUNT: '/confirm-account',
-  SIGN_IN: '/sign-in',
+  LOGIN: '/login',
+  FORGOT_PASSWORD: '/forgot-password',
+  RESET_PASSWORD: '/reset-password',
+}
 
-  APP_HOME: '/app/home',
+export const DEV_SITE_ROUTES: SITE_ROUTES = {
+  ID: process.env.NEXT_PUBLIC_ID_APP_URL ?? '',
+}
+
+export const PROD_SITE_ROUTES: SITE_ROUTES = {
+  ID: 'https://id.memba.co.uk',
 }
 
 interface API_ROUTES {
@@ -35,11 +47,19 @@ const PROD_API_ROUTES: API_ROUTES = {
 }
 
 interface ENDPOINTS {
-  REGISTER_TENANT: string
+  GET_TENANT: string
+  GET_USER: string
+  GET_APP: string
+  CREATE_GYM_APP: string
+  CREATE_USER: string
 }
 
 const ENDPOINTS: ENDPOINTS = {
-  REGISTER_TENANT: 'register-tenant',
+  GET_TENANT: 'tenants/get-account',
+  GET_USER: 'users/get-account',
+  GET_APP: 'get-app',
+  CREATE_GYM_APP: 'create-gym-app',
+  CREATE_USER: 'users/create-account',
 }
 
 interface AMPLIFY {
@@ -61,6 +81,7 @@ const PROD_AMPLIFY: AMPLIFY = {
 
 interface CONFIG {
   PAGE_ROUTES: PAGE_ROUTES
+  SITE_ROUTES: SITE_ROUTES
   API_ROUTES: API_ROUTES
   AMPLIFY: AMPLIFY
   ENDPOINTS: ENDPOINTS
@@ -68,6 +89,7 @@ interface CONFIG {
 
 export const DEV_CONFIG: CONFIG = {
   PAGE_ROUTES,
+  SITE_ROUTES: DEV_SITE_ROUTES,
   API_ROUTES: DEV_API_ROUTES,
   AMPLIFY: DEV_AMPLIFY,
   ENDPOINTS,
@@ -75,6 +97,7 @@ export const DEV_CONFIG: CONFIG = {
 
 export const PROD_CONFIG: CONFIG = {
   PAGE_ROUTES,
+  SITE_ROUTES: PROD_SITE_ROUTES,
   API_ROUTES: PROD_API_ROUTES,
   AMPLIFY: PROD_AMPLIFY,
   ENDPOINTS,

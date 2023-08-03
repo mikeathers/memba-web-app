@@ -5,15 +5,16 @@ import {removeItemFromLocalStorage, setItemInLocalStorage} from '@/utils/storage
 
 export const refreshJwt = async () => {
   try {
+    let accessToken = ''
     const session = await Auth.currentSession()
-
     if (session) {
-      const accessToken = session.getIdToken().getJwtToken()
+      accessToken = session.getIdToken().getJwtToken()
       setItemInLocalStorage(JWT_LOCALSTORAGE_KEY, accessToken)
       return accessToken
     }
+    return accessToken
   } catch (err) {
     removeItemFromLocalStorage(JWT_LOCALSTORAGE_KEY)
-    throw err
+    return null
   }
 }

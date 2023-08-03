@@ -1,14 +1,22 @@
 'use client'
-import {Container} from './page.styles'
-import {TextLink} from '@/components'
 import {CONFIG} from '@/config'
+import {useEffect} from 'react'
+import {useAuth} from '@/context'
+import {useRouter} from 'next/navigation'
 
 export default function Home() {
-  return (
-    <Container>
-      <TextLink href={CONFIG.PAGE_ROUTES.PRICING_PLANS}>Pricing plans</TextLink>
-      <TextLink href={CONFIG.PAGE_ROUTES.NEW_TENANT}>New tenant</TextLink>
-      <TextLink href={CONFIG.PAGE_ROUTES.SIGN_IN}>Sign in</TextLink>
-    </Container>
-  )
+  const {state} = useAuth()
+  const router = useRouter()
+  //
+  // useEffect(() => {
+  //   if (!state.isAuthenticating) {
+  //     if (!state.isAuthenticated) {
+  //       router.push(CONFIG.SITE_ROUTES.ID)
+  //     } else {
+  //       router.push(CONFIG.PAGE_ROUTES.APPS)
+  //     }
+  //   }
+  // }, [state.isAuthenticated])
+
+  return null
 }

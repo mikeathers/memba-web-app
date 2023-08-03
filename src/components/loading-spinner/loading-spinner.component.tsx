@@ -33,7 +33,7 @@ export const LoadingSpinner: React.FC<LoadingSpinnerProps> = (props) => {
     size = 32,
     color,
     circleForeground = colors.neutrals000,
-    circleBackground = colors.greys800,
+    circleBackground = colors.greys200,
   } = props
   return (
     <Container>

@@ -38,7 +38,7 @@ const margins = css<StyledButtonProps>`
 
 export const StyledButton = styled.button<StyledButtonProps>`
   ${margins};
-  border-radius: ${borderRadius.rounded};
+  border-radius: ${borderRadius.lightRounded};
   background-color: ${colors.blues800};
   color: ${colors.neutrals000};
   padding: 6px ${spacing.space4x};
@@ -47,7 +47,16 @@ export const StyledButton = styled.button<StyledButtonProps>`
   font-size: ${fontSizes.s};
   cursor: pointer;
 
-  ${({variant}) => {
+  ${({variant, isDisabled}) => {
+    if (variant === 'primary' && isDisabled) {
+      return css`
+        width: 100%;
+        color: ${colors.neutrals000};
+        border: none;
+        pointer-events: none;
+        background-color: ${colors.blues500};
+      `
+    }
     if (variant === 'primary') {
       return css`
         width: 100%;

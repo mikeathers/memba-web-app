@@ -1,8 +1,15 @@
 'use client'
-import {Auth} from '@aws-amplify/auth'
 import type {CognitoUser} from '@aws-amplify/auth'
+import {Auth} from '@aws-amplify/auth'
 import type {FC} from 'react'
-import React, {createContext, useCallback, useContext, useMemo, useReducer} from 'react'
+import React, {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useReducer,
+} from 'react'
 
 import {refreshJwt} from '@/utils'
 
@@ -12,7 +19,6 @@ import {
   completeRegistration,
   completeResetPassword,
   googleSignIn,
-  registerTenant,
   registerUser,
   resendConfirmationEmail,
   sendForgotPasswordLink,
@@ -20,7 +26,7 @@ import {
   signUserOut,
 } from './auth.helpers'
 import {authReducer, initialState} from './auth.reducer'
-import type {AuthContextValue, AuthProviderProps, LoginProps} from './auth.types'
+import type {AuthContextValue, AuthProviderProps} from './auth.types'
 import {ActionTypes} from './auth.types'
 
 export const AuthContext = createContext<AuthContextValue | null>(null)
@@ -68,22 +74,29 @@ const useAuth = (): AuthContextValue => {
 
   const handleRefreshUserSession = useCallback(async () => {
     try {
-      await refreshJwt()
-      const cognitoUser = await getCurrentUser()
+      const sessionRefreshed = await refreshJwt()
 
-      if (cognitoUser) {
-        const {attributes} = cognitoUser
+      if (sessionRefreshed) {
+        const cognitoUser = await getCurrentUser()
+        if (cognitoUser) {
+          const {attributes} = cognitoUser
+          dispatch({
+            type: ActionTypes.LOGIN_SUCCESS,
+            userConfig: cognitoUser,
+            user: {
+              emailAddress: attributes.email,
+              familyName: attributes.family_name,
+              givenName: attributes.given_name,
+              isTenantAdmin: attributes['custom:isTenantAdmin'],
+              isMembaAdmin: attributes['custom:isMembaAdmin'],
+              tenantId: attributes['custom:tenantId'],
+            },
+          })
+        }
+      } else {
         dispatch({
-          type: ActionTypes.LOGIN_SUCCESS,
-          userConfig: cognitoUser,
-          user: {
-            emailAddress: attributes.email,
-            familyName: attributes.family_name,
-            givenName: attributes.given_name,
-            isTenantAdmin: attributes['custom:isTenantAdmin'],
-            isMembaAdmin: attributes['custom:isMembaAdmin'],
-            tenantId: attributes['custom:tenantId'],
-          },
+          type: ActionTypes.LOGIN_FAILURE,
+          error: new Error('Could not refresh user session'),
         })
       }
     } catch {
@@ -97,7 +110,7 @@ const useAuth = (): AuthContextValue => {
   }, [dispatch])
 
   const handleSignUserIn = useCallback(
-    async (props: LoginProps) => {
+    async (props: LoginFormDetails) => {
       const user = await signUserIn(props)
       await addUserToState()
       await refreshJwt()
@@ -122,7 +135,6 @@ const useAuth = (): AuthContextValue => {
     googleSignIn,
     appleSignIn,
     addUserToState,
-    registerTenant,
   }
 }
 
@@ -137,9 +149,9 @@ const AuthProvider: FC<AuthProviderProps> = ({children}) => {
     [state],
   ) as AuthContextValue
 
-  // useEffect(() => {
-  //   console.log({state})
-  // }, [state])
+  useEffect(() => {
+    console.log({state})
+  }, [state])
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
 }

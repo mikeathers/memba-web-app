@@ -4,6 +4,7 @@ import type {TextInputProps} from '@/components'
 
 export const Container = styled.div`
   margin-bottom: ${spacing.space3x};
+  position: relative;
 `
 
 type StyledTextInputProps = Omit<TextInputProps, 'ref'>
@@ -11,9 +12,9 @@ type StyledTextInputProps = Omit<TextInputProps, 'ref'>
 export const StyledTextInput = styled.input<StyledTextInputProps>`
   width: 100%;
   border: 1px solid ${colors.blues100};
-  border-radius: ${borderRadius.rounded};
+  border-radius: ${borderRadius.lightRounded};
   padding: ${spacing.space1x};
-  font-size: ${fontSizes.s};
+  font-size: ${fontSizes.xs};
 
   &:focus {
     outline: none;
@@ -27,4 +28,23 @@ export const StyledTextInput = styled.input<StyledTextInputProps>`
       `
     }
   }}
+`
+export const TextInputWrapper = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom-width: 1px;
+  justify-content: space-between;
+`
+export const RightIconWrapper = styled.div`
+  height: 100%;
+  width: 22px;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 `
