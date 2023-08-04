@@ -52,6 +52,7 @@ interface ENDPOINTS {
   GET_APP: string
   CREATE_GYM_APP: string
   CREATE_USER: string
+  ADMIN_CHECK: string
 }
 
 const ENDPOINTS: ENDPOINTS = {
@@ -60,6 +61,7 @@ const ENDPOINTS: ENDPOINTS = {
   GET_APP: 'get-app',
   CREATE_GYM_APP: 'create-gym-app',
   CREATE_USER: 'users/create-account',
+  ADMIN_CHECK: 'tenants/is-admin',
 }
 
 interface AMPLIFY {

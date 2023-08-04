@@ -1,7 +1,11 @@
 import {Auth, CognitoHostedUIIdentityProvider} from '@aws-amplify/auth'
 
 import {TEMP_LOCAL_STORAGE_PWD_KEY} from '@/config'
-import {removeItemFromLocalStorage, setItemInLocalStorage} from '@/utils'
+import {
+  checkIfUserCanLogIn,
+  removeItemFromLocalStorage,
+  setItemInLocalStorage,
+} from '@/utils'
 
 import type {
   ChallengedUser,
@@ -39,23 +43,35 @@ export const completeRegistration = async (props: CompleteRegistrationProps) => 
   }
 }
 
-export const signUserIn = async (props: LoginFormDetails): Promise<ChallengedUser> => {
+export const signUserIn = async (
+  props: LoginFormDetails,
+): Promise<ChallengedUser | null> => {
   removeItemFromLocalStorage(TEMP_LOCAL_STORAGE_PWD_KEY)
 
-  const {emailAddress, password} = props
-  const user = (await Auth.signIn(
-    emailAddress.trim().toLowerCase(),
-    password,
-  )) as ChallengedUser
+  const {emailAddress, password, userCollection} = props
 
-  // const res = await Auth.currentSession()
-  // console.log('TOKEN: ', res.getIdToken())
+  const userCanLogin = await checkIfUserCanLogIn({
+    emailAddress,
+    userCollection,
+  })
 
-  if (user.challengeName === 'NEW_PASSWORD_REQUIRED') {
-    await Auth.completeNewPassword(user, password)
+  if (userCanLogin) {
+    const user = (await Auth.signIn(
+      emailAddress.trim().toLowerCase(),
+      password,
+    )) as ChallengedUser
+
+    // const res = await Auth.currentSession()
+    // console.log('TOKEN: ', res.getIdToken())
+
+    if (user.challengeName === 'NEW_PASSWORD_REQUIRED') {
+      await Auth.completeNewPassword(user, password)
+    }
+
+    return user
   }
 
-  return user
+  return null
 }
 
 export const signUserOut = async () => {

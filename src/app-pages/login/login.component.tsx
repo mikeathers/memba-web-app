@@ -7,12 +7,13 @@ import {useRouter} from 'next/navigation'
 
 import {Button, CenterBox, ErrorToast, Text, TextInput} from '@/components'
 import {colorTokens, spacingTokens} from '@/styles'
-import {useSafeAsync} from '@/hooks'
+import {useSafeAsync, useTenant} from '@/hooks'
 import {useAuth} from '@/context'
 import {CONFIG} from '@/config'
 
 import {ErrorContainer, ActionsContainer} from './login.styles'
 import {toast} from 'react-toastify'
+import {checkIfUserCanLogIn} from '@/utils'
 
 export interface LoginProps {
   content: LoginContent
@@ -22,8 +23,10 @@ export const Login: React.FC<LoginProps> = (props) => {
   const {content} = props
   const router = useRouter()
   const {signUserIn, resendConfirmationEmail} = useAuth()
+  const {app} = useTenant()
   const {run, data, error, isLoading, isSuccess} = useSafeAsync()
   const [fetchError, setFetchError] = useState<string>('')
+  const [isLocalLoading, setIsLocalLoading] = useState<boolean>(false)
   const [emailAddress, setEmailAddress] = useState<string>('')
 
   const handleResendConfirmationEmail = async () => {
@@ -83,7 +86,9 @@ export const Login: React.FC<LoginProps> = (props) => {
           emailAddress: '',
           password: '',
         }}
-        onSubmit={(values) => handleSubmitForm(values)}
+        onSubmit={(values) =>
+          handleSubmitForm({...values, userCollection: app?.users || []})
+        }
         validationSchema={formSchema}
         validateOnChange={false}
         validateOnBlur={false}
@@ -135,7 +140,7 @@ export const Login: React.FC<LoginProps> = (props) => {
               </ErrorContainer>
 
               <Button
-                isDisabled={isLoading}
+                isDisabled={isLoading || isLocalLoading}
                 isLoading={isLoading}
                 variant={'primary'}
                 onClick={() => handleSubmit()}

@@ -62,6 +62,34 @@ export const confirmAccount: ConfirmAccountContent = {
   sendAgain: 'Send again',
 }
 
+export const forgotPassword: ForgotPasswordContent = {
+  heading: "Can't log in?",
+  message: "We'll send a recovery link to:",
+  sendLinkCta: 'Send recovery link',
+  returnToLogin: 'Return to log in',
+  form: {
+    emailPlaceholder: 'Enter your email',
+    validation: {
+      emailAddress: '*Please enter your email address',
+      emailAddressFormat: '*Your email address is not valid',
+    },
+  },
+}
+
+export const resetPassword: ResetPasswordContent = {
+  heading: 'Choose a new password',
+  submitCta: 'Continue',
+  form: {
+    passwordPlaceholder: 'Enter a new password',
+    validation: {
+      passwordValidationMessage:
+        '*Your password should include lowercase, uppercase, digits and symbols.',
+      passwordLengthMessage: '*Your password should be at least 6 characters.',
+      password: '*A password is required to set up your account',
+    },
+  },
+}
+
 export const miscContent: MiscContent = {
   allRightsReserved: 'Copyright © 2023 All rights reserved',
 }

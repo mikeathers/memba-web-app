@@ -29,10 +29,6 @@ export const SignUp: React.FC<SignUpProps> = (props) => {
   const [emailAddress, setEmailAddress] = useState<string>('')
 
   useEffect(() => {
-    console.log()
-  }, [error])
-
-  useEffect(() => {
     if (isSuccess) {
       router.push(`${CONFIG.PAGE_ROUTES.CONFIRM_ACCOUNT}/?emailAddress=${emailAddress}`)
     }

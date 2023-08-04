@@ -23,9 +23,11 @@ import {spacingTokens} from '@/styles'
 import {useRouter} from 'next/navigation'
 import {CONFIG} from '@/config'
 import {useEffect, useState} from 'react'
+import {LoadingSpinner} from '../loading-spinner'
 
 export const TitleBar: React.FC = () => {
   const {signUserOut} = useAuth()
+  const {run, isLoading} = useSafeAsync()
   const router = useRouter()
   const {user} = useTenant()
   const [initials, setInitials] = useState<{firstInitial: string; lastInitial: string}>({
@@ -36,7 +38,6 @@ export const TitleBar: React.FC = () => {
   const {ref, isComponentVisible, setIsComponentVisible} = useComponentVisible(false)
 
   useEffect(() => {
-    console.log({user})
     if (user) {
       const firstNameInitial = user?.firstName?.charAt(0).toUpperCase()
       const lastNameInitial = user?.lastName?.charAt(0).toUpperCase()
@@ -55,8 +56,10 @@ export const TitleBar: React.FC = () => {
     await signUserOut()
     if (user?.isTenantAdmin) {
       router.push(CONFIG.SITE_ROUTES.ID)
-    }
+    } else router.push(CONFIG.PAGE_ROUTES.LOGIN)
   }
+
+  if (isLoading) return <LoadingSpinner />
 
   return (
     <Container>

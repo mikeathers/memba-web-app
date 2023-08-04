@@ -27,6 +27,7 @@ declare global {
     firstName: string
     id: string
     isTenantAdmin: boolean
+    isMembaAdmin: boolean
     lastName: string
     tenantId: string
     tenant: Tenant
@@ -46,6 +47,7 @@ declare global {
     type: 'gym-management'
     tenantId: string
     groupName: string
+    users: MembaUser[] | []
   }
   interface SignupFormDetails extends FormikValues {
     emailAddress: string
@@ -59,6 +61,7 @@ declare global {
   interface LoginFormDetails extends FormikValues {
     emailAddress: string
     password: string
+    userCollection: MembaUser[] | []
   }
 
   interface NewCustomerFormDetails extends FormikValues {
@@ -194,6 +197,33 @@ declare global {
     resendConfirmationEmail: string
     checkSpamFolder: string
     sendAgain: string
+  }
+
+  type ForgotPasswordContent = {
+    heading: string
+    message: string
+    sendLinkCta: string
+    returnToLogin: string
+    form: {
+      emailPlaceholder: string
+      validation: {
+        emailAddress: string
+        emailAddressFormat: string
+      }
+    }
+  }
+
+  type ResetPasswordContent = {
+    heading: string
+    submitCta: string
+    form: {
+      passwordPlaceholder: string
+      validation: {
+        password: string
+        passwordValidationMessage: string
+        passwordLengthMessage: string
+      }
+    }
   }
 }
 

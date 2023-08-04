@@ -6,7 +6,12 @@ import type {ReactElement} from 'react'
 import mocked = jest.mocked
 
 import {mockCognitoUserAttributes, mockState} from '@/test-support'
-import {refreshJwt, removeItemFromLocalStorage, setItemInLocalStorage} from '@/utils'
+import {
+  checkIfUserCanLogIn,
+  refreshJwt,
+  removeItemFromLocalStorage,
+  setItemInLocalStorage,
+} from '@/utils'
 import type {ChallengedUser} from './auth.types'
 import {ActionTypes, AuthContext, initialState, useAuth} from './'
 import {TEMP_LOCAL_STORAGE_PWD_KEY} from '@/config'
@@ -25,6 +30,7 @@ const cognitoUserMock: CognitoUserMockType = {attributes: mockCognitoUserAttribu
 const mockRemoveItem = mocked(removeItemFromLocalStorage)
 const mockSetItem = mocked(setItemInLocalStorage)
 const mockRefreshJwt = mocked(refreshJwt)
+const mockCheckUserCanLogin = mocked(checkIfUserCanLogIn)
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-assignment
 const {useAuthMockState, mockDispatch} = mockState()
@@ -64,6 +70,8 @@ describe('AuthContext', () => {
     jest.spyOn(Auth, 'confirmSignUp').mockImplementation()
     jest.spyOn(Auth, 'changePassword').mockImplementation()
     jest.spyOn(Auth, 'federatedSignIn').mockImplementation()
+
+    mockCheckUserCanLogin.mockResolvedValue(true)
   })
 
   it('should throw an error is hook not wrapped in the correct provider', () => {
@@ -91,6 +99,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
 
       expect(mockRemoveItem).toHaveBeenCalledWith(TEMP_LOCAL_STORAGE_PWD_KEY)
@@ -101,6 +110,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
 
       await waitFor(() =>
@@ -122,6 +132,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
 
       await waitFor(() =>
@@ -137,6 +148,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
       await waitFor(() => expect(Auth.currentAuthenticatedUser).toBeCalled())
     })
@@ -146,6 +158,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
       const {attributes} = cognitoUserMock
 
@@ -170,6 +183,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
 
       await waitFor(() => expect(mockRefreshJwt).toHaveBeenCalled())
@@ -181,6 +195,7 @@ describe('AuthContext', () => {
       await result.current.signUserIn({
         emailAddress: testEmailAddress,
         password: testPassword,
+        userCollection: [],
       })
       await waitFor(() =>
         expect(mockDispatch).toBeCalledWith({

@@ -28,7 +28,6 @@ export const TextInput: React.FC<TextInputProps> = (props) => {
   const [showPassword, setShowPassword] = useState<boolean>(false)
 
   const handleType = () => {
-    console.log()
     if (props.type !== 'password') return props.type
     else if (props.type === 'password' && showPassword) return 'text'
     else return 'password'

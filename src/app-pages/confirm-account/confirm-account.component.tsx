@@ -24,12 +24,6 @@ export const ConfirmAccount: React.FC<ConfirmAccountProps> = (props) => {
   const searchParams = useSearchParams()
 
   const emailAddress = searchParams.get('emailAddress')
-  useEffect(() => {
-    console.log({emailAddress})
-  }, [emailAddress])
-  useEffect(() => {
-    console.log({error})
-  }, [error])
 
   useEffect(() => {
     if (isSuccess) {

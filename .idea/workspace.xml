@@ -5,8 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e6cf639-c049-438c-ba34-fee79f975ce4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app-pages/forgot-password/forgot-password.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/forgot-password/forgot-password.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/forgot-password/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/reset-password/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/reset-password/reset-password.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app-pages/reset-password/reset-password.styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/forgot-password/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/reset-password/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/tenants/admin-check.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/check-if-user-can-log-in/check-if-user-can-log-in.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/check-if-user-can-log-in/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/confirm-account/confirm-account.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/confirm-account/confirm-account.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/login/login.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/login/login.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/signup/signup.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/signup/signup.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/text-input.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/title-bar/title-bar.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/auth/auth.helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/auth/auth.helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/use-tenant/use-tenant.hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/use-tenant/use-tenant.hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/tenants/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/tenants/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +58,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/src/app-pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/michaelatherton/Development/memba/memba-web-app/src/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -51,9 +76,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app-pages" />
       <recent name="$PROJECT_DIR$/src/services/tenants" />
-      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/app/profile" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -173,7 +198,7 @@
       <workItem from="1690876403900" duration="3957000" />
       <workItem from="1690960419220" duration="2201000" />
       <workItem from="1690962681530" duration="2639000" />
-      <workItem from="1690998739030" duration="10911000" />
+      <workItem from="1690998739030" duration="23336000" />
     </task>
     <servers />
   </component>

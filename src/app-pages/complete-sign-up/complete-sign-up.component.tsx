@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 import {Container} from './complete-sign-up.styles'
 import {useRouter, useSearchParams} from 'next/navigation'
 import {useAuth} from '@/context'
-import {useSafeAsync} from '@/hooks'
+import {useSafeAsync, useTenant} from '@/hooks'
 import {getItemFromLocalStorage} from '@/utils'
 import {CONFIG, PAGE_ROUTES, TEMP_LOCAL_STORAGE_PWD_KEY} from '@/config'
 import {Loading} from '@/components'
@@ -11,6 +11,7 @@ import {Loading} from '@/components'
 export const CompleteSignUp: React.FC = () => {
   const {run, isSuccess, error, isLoading} = useSafeAsync()
   const {completeRegistration, signUserIn, state} = useAuth()
+  const {app} = useTenant()
   const searchParams = useSearchParams()
   const router = useRouter()
   const [localLoading, setLocalLoading] = useState<boolean>(true)
@@ -37,7 +38,9 @@ export const CompleteSignUp: React.FC = () => {
       if (emailAddress) {
         const password = getItemFromLocalStorage<string>(TEMP_LOCAL_STORAGE_PWD_KEY)
         if (password) {
-          const user = await run(signUserIn({emailAddress, password}))
+          const user = await run(
+            signUserIn({emailAddress, password, userCollection: app?.users || []}),
+          )
           if (user) {
             router.push(CONFIG.PAGE_ROUTES.HOME)
           } else {

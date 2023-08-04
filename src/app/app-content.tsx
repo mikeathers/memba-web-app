@@ -40,17 +40,13 @@ export const AppContent: React.FC<AppContentProps> = (props) => {
   useEffect(() => {
     const protectedRoutes = ['/home']
     const pathIsProtected = protectedRoutes.indexOf(pathName) !== -1
-    console.log({pathIsProtected, state})
-    console.log({pathName})
 
-    if (!state.isAuthenticated && pathIsProtected) {
-      console.log('1')
+    if (!state.isAuthenticating && !state.isAuthenticated && pathIsProtected) {
       router.push(CONFIG.PAGE_ROUTES.SIGN_UP)
       return
     }
 
     if (state.isAuthenticated && !pathIsProtected) {
-      console.log('2')
       router.push(CONFIG.PAGE_ROUTES.HOME)
       return
     }
@@ -72,7 +68,7 @@ export const AppContent: React.FC<AppContentProps> = (props) => {
 
   return (
     <>
-      {state.isAuthenticated ? (
+      {!state.isAuthenticating && state.isAuthenticated ? (
         <>
           <TitleBar />
           <AuthenticatedContainer>{children}</AuthenticatedContainer>
