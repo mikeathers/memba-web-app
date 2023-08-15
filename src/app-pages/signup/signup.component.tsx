@@ -65,8 +65,28 @@ export const SignUp: React.FC<SignUpProps> = (props) => {
   const handleSubmitForm = async (values: SignupFormDetails) => {
     setEmailAddress(values.emailAddress)
     if (app?.groupName) {
-      await run(registerUser({...values, groupName: app?.groupName, appId: app.id}))
+      const membership: UserMembership = {
+        name: app.name,
+        id: app.id,
+        url: app.url,
+        tier: app.tier,
+        type: app.type,
+      }
+
+      await run(
+        registerUser({
+          ...values,
+          groupName: app?.groupName,
+          appId: app.id,
+          signUpRedirectUrl: app.url,
+          membership,
+        }),
+      )
     }
+  }
+
+  const handleGoToLogin = () => {
+    router.push(`${CONFIG.SITE_ROUTES.ID}/login/?id=${app?.id || ''}`)
   }
 
   return (
@@ -172,11 +192,9 @@ export const SignUp: React.FC<SignUpProps> = (props) => {
       </Formik>
 
       <LoginContainer>
-        <Link href={'/login'}>
-          <Text type={'caption'} color={colorTokens.blues800}>
-            {content.login}
-          </Text>
-        </Link>
+        <Button onClick={handleGoToLogin} variant={'text'} color={colorTokens.blues800}>
+          {content.login}
+        </Button>
       </LoginContainer>
     </CenterBox>
   )

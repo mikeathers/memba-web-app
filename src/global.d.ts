@@ -33,14 +33,14 @@ declare global {
     tenant: Tenant
   }
 
-  export type Membership = {
+  export type MembershipPricing = {
     name: string
     price: number
   }
 
   export type MembaApp = {
     name: string
-    memberships: Membership[]
+    memberships: MembershipPricing[]
     id: string
     url: string
     tier: string
@@ -49,6 +49,15 @@ declare global {
     groupName: string
     users: MembaUser[] | []
   }
+
+  export type UserMembership = {
+    name: string
+    id: string
+    url: string
+    tier: string
+    type: 'gym-management'
+  }
+
   interface SignupFormDetails extends FormikValues {
     emailAddress: string
     password: string

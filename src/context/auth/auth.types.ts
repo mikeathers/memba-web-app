@@ -74,6 +74,8 @@ export interface RegisterUserProps {
   fullName: string
   groupName: string
   appId: string
+  signUpRedirectUrl: string
+  membership: UserMembership
 }
 
 export interface CompleteRegistrationProps {

@@ -38,6 +38,7 @@ export const Login: React.FC<LoginProps> = (props) => {
       router.push(CONFIG.PAGE_ROUTES.HOME)
     }
 
+    console.log({error})
     if (error?.message && error.message.includes('User does not exist')) {
       setFetchError(content.userNotFoundError)
       return

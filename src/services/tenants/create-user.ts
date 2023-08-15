@@ -8,6 +8,8 @@ export interface CreateUserAccountProps {
   lastName: string
   groupName: string
   appId: string
+  signUpRedirectUrl: string
+  membership: UserMembership
 }
 
 export const createUserAccount = async (props: CreateUserAccountProps) => {
@@ -19,3 +21,7 @@ export const createUserAccount = async (props: CreateUserAccountProps) => {
     data: props,
   })
 }
+
+// GET APP FROM ID IN ID CODE BASE
+// GET NAME
+//

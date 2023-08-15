@@ -57,7 +57,13 @@ describe('AuthContext', () => {
   const testFirstName = 'joe'
   const testLastName = 'bloggs'
   const testCode = '1000'
-
+  const membership: UserMembership = {
+    name: 'test-app',
+    type: 'gym-management',
+    tier: 'Free',
+    url: 'https://test.com',
+    id: '12345',
+  }
   beforeEach(() => {
     jest.resetAllMocks()
     jest.spyOn(Auth, 'currentAuthenticatedUser').mockResolvedValue(cognitoUserMock)
@@ -234,6 +240,8 @@ describe('AuthContext', () => {
         fullName: `${testFirstName} ${testLastName}`,
         groupName: '',
         appId: '',
+        signUpRedirectUrl: '',
+        membership,
       })
 
       await waitFor(() =>
@@ -244,6 +252,8 @@ describe('AuthContext', () => {
           firstName: testFirstName,
           groupName: '',
           appId: '',
+          signUpRedirectUrl: '',
+          membership,
         }),
       )
     })
@@ -256,6 +266,8 @@ describe('AuthContext', () => {
         fullName: `${testFirstName} ${testLastName}`,
         groupName: '',
         appId: '',
+        signUpRedirectUrl: '',
+        membership: expect.anything(),
       })
 
       expect(mockSetItem).toHaveBeenCalledWith(TEMP_LOCAL_STORAGE_PWD_KEY, testPassword)

@@ -17,7 +17,15 @@ import type {
 import {createUserAccount} from '@/services'
 
 export const registerUser = async (props: RegisterUserProps) => {
-  const {emailAddress, password, fullName, groupName, appId} = props
+  const {
+    emailAddress,
+    password,
+    fullName,
+    groupName,
+    appId,
+    signUpRedirectUrl,
+    membership,
+  } = props
   if (emailAddress && password && fullName) {
     const splitName = fullName.split(' ', 2)
     const firstName = splitName[0]
@@ -30,6 +38,8 @@ export const registerUser = async (props: RegisterUserProps) => {
       emailAddress,
       groupName,
       appId,
+      signUpRedirectUrl,
+      membership,
     })
 
     setItemInLocalStorage(TEMP_LOCAL_STORAGE_PWD_KEY, password)
